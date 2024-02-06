@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.aboutUs {
+    margin: auto 60px;
+}
+
+.aboutUs h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.aboutUs p {
+    font-size: 20px;
+    font-weight: 400;
+    color: grey;
+    margin-bottom: 15px;
+}
+
+.aboutUs h4 {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    color: rgb(0, 153, 255);
+}
+
+.ourStory hr {
+    margin: 10px 15px 50px 15px;
+}
+
+.content {
+    display: flex;
+    margin: 50px;
+    height: 476px;
+    /* background-color: blue; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+}
+
+.content .content-Container {
+    width: 600px;
+    background-color: #F4F4F4;
+    border-radius: 15px;
+}
+
+.driver {
+    height: 433.84px;
+}
+
+.content .content-Image img {
+    width: 525px;
+    border-radius: 5px;
+}
+
+.content .content-Container p {
+    font-size: 16px;
+    margin: 0;
+    padding: 20px 30px;
+}
+
+.content .content-Container h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+.driver-img {
+    width: 100%;
+}
+
+
+.driver-content {
+    display: flex;
+    height: 433.84px;
+    padding: 0 100px;
+    position: relative;
+    top: -437px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.join-Us {
+    width: 420px;
+    height: 149px;
+
+}
+
+.skilled-driver {
+    width: 445px;
+    height: 227px;
+}
+
+.commitment-container{
+    width: 100%;
+}
+
+.commitment{
+    margin: 30px 45px;
+    background-color: #F4F4F4;
+    border-radius: 25px;
+
+}
+
+.commitment h1{
+    padding-left: 58px;
+    padding-top: 20px;
+}
+.info-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.commitment-info{
+    width: 600px;
+}
+
+.commitment-info p{
+    font-size: 18px;
+    color: hsla(0, 0%, 0%, 0.85);
+}
+
+.commitment-img{
+    height: 450px;
+    width: 450px;
+}

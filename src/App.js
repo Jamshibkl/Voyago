@@ -4,9 +4,8 @@ import HowItWorks from './pages/HowItWorks/HowItWorks';
 function App() {
   return (
     <div className="App">
-     {/* <Home />
-     <br/> */}
-     <HowItWorks />
+     <h1>Voyago</h1>
+     <Home />
     </div>
   );
 }

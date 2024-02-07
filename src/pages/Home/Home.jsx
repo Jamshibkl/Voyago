@@ -1,14 +1,15 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import CarAnimate from '../../Assets/Car driving-rafiki (2).svg'
-import Feature from '../../components/Features/Feature'
+import CarAnimate from "../../Assets/Car driving-rafiki (2).svg";
+import Feature from "../../components/Features/Feature";
 import HomeBanner from "../../components/banner/HomeBanner";
 import Review from "../../components/Review/Review";
 import FAQ from "../../components/FAQ/FAQ";
+import Footer from "../../components/Footer/Footer";
 import "./Home.css";
 function Home() {
   return (
-    <div>
+    <>
       {/* Header */}
       <Navbar
         collapseOnSelect
@@ -49,7 +50,9 @@ function Home() {
             </Nav>
 
             <Nav className="ms-auto">
-              <Nav.Link href="#deets" className="nav-link-with-space text-light">
+              <Nav.Link
+                href="#deets"
+                className="nav-link-with-space text-light">
                 Login
               </Nav.Link>
               <Nav.Link eventKey={2} href="#memes" className="signup-btn">
@@ -65,7 +68,12 @@ function Home() {
       {/* Main  section */}
       <section className="main_section">
         <div className="main_left">
-          <h1> Get Skillful Drivers,<br />On-Demand</h1>
+          <h1>
+            {" "}
+            Get Skillful Drivers,
+            <br />
+            On-Demand
+          </h1>
           <p>
             Voyago transforms the way you travel. Bringing skillful drivers to
             your doorstep, we make owning a car a pleasure.
@@ -73,40 +81,41 @@ function Home() {
           <button className="main_btn">Book a Driver</button>
         </div>
         <div className="main-right">
-       
           <div className="main_container">
-          <img src={CarAnimate} alt="" className="car_avtar"/>
+            <img src={CarAnimate} alt="" className="car_avtar" />
           </div>
-        
         </div>
       </section>
       {/* feture section */}
       <section className="feature_section">
-      <h1 className="feature_heading">Features</h1>
-             <h1 className="feature_sub_heading">
-             Experience the Benefits of Voyago
-             </h1>
-             <p className="feature_qoute">Discover the features that make Voyago the perfect choice for
-        personalized transportation</p>
+        <h1 className="feature_heading">Features</h1>
+        <h1 className="feature_sub_heading">
+          Experience the Benefits of Voyago
+        </h1>
+        <p className="feature_qoute">
+          Discover the features that make Voyago the perfect choice for
+          personalized transportation
+        </p>
         <Feature />
       </section>
       {/* Banner section */}
-      <section className="banner_section"> 
-      <HomeBanner />
+      <section className="banner_section">
+        <HomeBanner />
       </section>
       {/* Review Section */}
       <section className="feedback_section">
-      <h2 className="feedback_heading">What Our Users Are Saying</h2>
-       <Review />
+        <h2 className="feedback_heading">What Our Users Are Saying</h2>
+        <Review />
       </section>
       <section className="Faq_section">
         <h2 className="Faq_heading">Quick Answers to Common Questions</h2>
         <div className="faq_container">
-        <FAQ />
+          <FAQ />
         </div>
-       
       </section>
-    </div>
+
+      <Footer />
+    </>
   );
 }
 

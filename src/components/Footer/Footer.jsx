@@ -30,16 +30,19 @@ export default function Footer() {
             <p>voyago@gmail.com</p>
             <p>Link1</p>
             <p>Link2</p>
+            <p>Link3</p>
           </div>
           <div className="phone">
            <p> +919874561232</p>
             <p>Link1</p>
             <p>Link2</p>
+            <p>Link3</p>
           </div>
           <div className="location">
            <p>Mangalore</p>
             <p>Link1</p>
             <p>Link2</p>
+            <p>Link3</p>
           </div>
         </div>
       </div>

@@ -55,7 +55,7 @@ function Home() {
                 className="nav-link-with-space text-light">
                 Login
               </Nav.Link>
-              <Nav.Link eventKey={2} href="#memes" className="signup-btn">
+              <Nav.Link eventKey={2} href="" className="signup-btn">
                 Sign Up
               </Nav.Link>
             </Nav>
@@ -113,8 +113,9 @@ function Home() {
           <FAQ />
         </div>
       </section>
-
+      <section className="footer_section">
       <Footer />
+      </section>
     </>
   );
 }

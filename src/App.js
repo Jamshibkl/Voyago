@@ -5,7 +5,6 @@ import ServiceStatus from './pages/ServiceStatus/ServiceStatus';
 function App() {
   return (
     <div className="App">
-     <h1>Voyago</h1>
      <Home />
     </div>
   );

@@ -14,7 +14,7 @@ function Home() {
       <Navbar
         collapseOnSelect
         expand="lg"
-        className="navbar w-100 p-2 bg-transparent">
+        className="navbar w-100 p-3 bg-transparent">
         <Container className="nav_container">
           <Navbar.Brand className="logo" href="#home">
             VOYAGO

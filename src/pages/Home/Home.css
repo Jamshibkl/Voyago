@@ -80,12 +80,13 @@ p {
   background: var(--blue);
   border-radius: 0px 0px 0px 600px;
   width: 580px;
-  height: 580px;
   margin-bottom: 50px;
   z-index: 1;
 }
 .car_avtar {
-  width: 650px;
+  width: 700px;
+  margin-left: -220px;
+  margin-top: -50px;
 }
 .feature_heading {
   color: rgba(0, 0, 0, 0.64);

@@ -4,7 +4,7 @@ import { Container, Nav, Navbar, NavDropdown, } from 'react-bootstrap';
 import './NavBar.css';
 function NavBar() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="navbar w-100 p-2 bg-transparent">
+    <Navbar collapseOnSelect expand="lg" className="navbar w-100 p-3 bg-transparent">
       <Container className='nav_container'>
         {/* <Link to='/'>  */}
         <Navbar.Brand className='logo' href="#home">VOYAGO</Navbar.Brand>

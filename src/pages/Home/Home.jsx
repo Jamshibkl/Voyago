@@ -14,7 +14,8 @@ function Home() {
       <Navbar
         collapseOnSelect
         expand="lg"
-        className="navbar w-100 p-3 bg-transparent">
+        className="navbar w-100 p-3 bg-transparent"
+      >
         <Container className="nav_container">
           <Navbar.Brand className="logo" href="#home">
             VOYAGO
@@ -28,7 +29,8 @@ function Home() {
               <NavDropdown
                 title="Company"
                 id="collapsible-nav-dropdown"
-                className="dropdown-btn">
+                className="dropdown-btn"
+              >
                 <NavDropdown.Item href="#action/3.1">About us</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   How it Works
@@ -52,7 +54,8 @@ function Home() {
             <Nav className="ms-auto">
               <Nav.Link
                 href="#deets"
-                className="nav-link-with-space text-light">
+                className="nav-link-with-space text-light"
+              >
                 Login
               </Nav.Link>
               <Nav.Link eventKey={2} href="" className="signup-btn">
@@ -88,14 +91,16 @@ function Home() {
       </section>
       {/* feture section */}
       <section className="feature_section">
-        <h1 className="feature_heading">Features</h1>
-        <h1 className="feature_sub_heading">
-          Experience the Benefits of Voyago
-        </h1>
-        <p className="feature_qoute">
-          Discover the features that make Voyago the perfect choice for
-          personalized transportation
-        </p>
+        <div className="feature_content">
+          <h1 className="feature_heading">Features</h1>
+          <h1 className="feature_sub_heading">
+            Experience the Benefits of Voyago
+          </h1>
+          <p>
+            Discover the features that make Voyago the perfect choice for
+            personalized transportation
+          </p>
+        </div>
         <Feature />
       </section>
       {/* Banner section */}
@@ -114,7 +119,7 @@ function Home() {
         </div>
       </section>
       <section className="footer_section">
-      <Footer />
+        <Footer />
       </section>
     </>
   );

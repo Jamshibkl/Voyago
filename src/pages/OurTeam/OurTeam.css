@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.conatiner {
+    width: 100%;
+}
+
+.ourTeam {
+    margin: 50px 180px;
+}
+
+.ourTeam h1 {
+    padding: 10px;
+    margin: 10px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 149, 255);
+}
+
+.teamPara {
+    text-align: center;
+    font-size: 25px;
+}
+
+.Founders {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 180px;
+    padding: 20px;
+}
+
+.Founders h3 {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+    color: hsl(205, 100%, 50%);
+}
+
+.founder {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.co-Founder {
+    width: 330px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #f4f4f4;
+}
+
+.co-Founder img {
+    width: 200px;
+    border-radius: 10px;
+    margin: 13px 50px;
+}
+
+.co-Founder p {
+    font-size: 19px;
+}
+
+.ourCommitments {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.commitments {
+    width: 1120px;
+}
+
+.ourContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.our-img {
+    width: 700px;
+}
+
+.commitments-para {
+    margin-left: 25px;
+    padding-right: 20px;
+}
+
+.commitments-para h3 {
+    padding: 15px;
+}
+
+.Opportunities{
+    margin: 150px 0 20px;
+    display: flex;
+    justify-content: center;
+    background-color: hsla(0, 0%, 96%, 0.611);
+
+}
+
+
+.joinUs h2 {
+    padding-top: 55px;
+    text-align: center;
+    color: rgb(0, 149, 255);
+    font-weight: bold;
+}
+
+.careerOpportunities {
+    display: flex;
+    width: 1250px;
+    padding: 50px;
+}
+
+.ourOpportunities {
+    width: 65%;
+    margin-right: 30px;
+}
+
+.ourOpportunities h3 {
+    text-align: left;
+    color: rgb(0, 149, 255);
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.ourOpportunities p {
+    font-size: 21px;
+    padding: 20px 0 25px;
+}
+
+.ourOpportunities button{
+    width: 160px;
+    height: 55px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: rgba(0, 149, 255, 0.914) ;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.ourOpportunities button:hover{
+    background-color: rgba(0, 149, 255, 0.814) ;
+    font-size: 18px;
+}
+.ourOpportunities button:active{
+    background-color: rgba(0, 149, 255, 0.364) ;
+    font-size: 18px;
+}
+
+.careerImg {
+    width: 35%;
+}

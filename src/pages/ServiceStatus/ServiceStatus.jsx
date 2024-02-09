@@ -3,6 +3,7 @@ import "./ServiceStatus.css";
 import MotherImg from "../../Assets/download.jpeg";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
+import CurrentService from '../../Assets/service current.svg'
 function ServiceStatus(props) {
   return (
     <>
@@ -34,7 +35,7 @@ function ServiceStatus(props) {
             <div className="service-11">Current Service Status</div>
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/f713df813a7a3942862c8699cfed430212b9c1347b4424b43cd9a0c6ac36e241?"
+              src={CurrentService}
               className="img-2"
             />
           </div>

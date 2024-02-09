@@ -5,7 +5,6 @@ import Founder2 from "../../Assets/jamsheer-profile.jpeg";
 import Amigo from "../../Assets/Typing-amico.svg";
 import Revenue from "../../Assets/Revenue-bro.svg";
 import Footer from "../../components/Footer/Footer";
-import NavBar from "../../components/NavBar/NavBar";
 
 function OurTeam() {
   return (

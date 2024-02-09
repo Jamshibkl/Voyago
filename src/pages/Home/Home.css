@@ -2,34 +2,42 @@
   --blue: #407bff;
   --white: #ffffff;
 }
+
 body {
   margin: 0;
   top: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
 .navbar {
   position: absolute;
   z-index: 1;
 }
+
 .logo {
   color: var(--blue);
   font-weight: bold;
   font-size: 30px;
   font-family: monospace;
 }
+
 .nav-link-with-space {
-  margin-right: 4rem; /* Adjust the value as per your preference */
-  margin-left: 4rem; /* Adjust the value as per your preference */
+  margin-right: 4rem;
+  /* Adjust the value as per your preference */
+  margin-left: 4rem;
+  /* Adjust the value as per your preference */
   font-size: 20px;
   color: black;
   font-weight: bold;
 }
+
 .dropdown-btn {
   font-size: 20px;
   color: black;
   font-weight: bold;
 }
+
 .signup-btn {
   border: 2px solid white;
   border-radius: 64px;
@@ -39,6 +47,7 @@ body {
   color: var(--white);
   font-weight: bold;
 }
+
 /* main section */
 .main_section {
   width: 100%;
@@ -46,25 +55,30 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .main_left {
   width: 50%;
   align-items: center;
   margin-top: 20px;
 }
+
 .main_btn,
 h1,
 p {
   margin-left: 120px;
 }
+
 h1 {
   font-size: 90px;
   font-weight: 900;
   margin-top: 80px;
 }
+
 p {
   font-size: 20px;
   width: 380px;
 }
+
 .main_btn {
   width: 300px;
   height: 80px;
@@ -76,6 +90,7 @@ p {
   font-weight: bold;
   margin-top: 10px;
 }
+
 .main_container {
   background: var(--blue);
   border-radius: 0px 0px 0px 600px;
@@ -83,48 +98,48 @@ p {
   margin-bottom: 50px;
   z-index: 1;
 }
+
 .car_avtar {
   width: 700px;
   margin-left: -220px;
   margin-top: -50px;
 }
+
+/* feature section */
+
+.feature_section {
+  width: 100%;
+
+}
+
 .feature_heading {
+  text-align: center;
   color: rgba(0, 0, 0, 0.64);
   margin-top: 163px;
-  font: 600 40px Inter, sans-serif;
-  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
 }
-@media (max-width: 991px) {
-  .feature_heading {
-    margin-top: 40px;
-  }
-}
+
 .feature_sub_heading {
   text-align: center;
   color: var(--blue);
   margin-top: 74px;
   font: 800 58px Inter, sans-serif;
 }
-@media (max-width: 991px) {
-  .feature_sub_heading {
-    max-width: 100%;
-    margin-top: 40px;
-    font-size: 40px;
-  }
+.feature_content{
+  margin-bottom: 150px;
 }
-
-.feature_qoute {
+.feature_content p{
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   color: rgba(0, 0, 0, 0.65);
   margin-top: 25px;
   font: 400 28px Inter, sans-serif;
   width: 100%;
-  margin-right: 20px;
 }
-@media (max-width: 991px) {
-  .feature_qoute {
-    max-width: 100%;
-  }
-}
+
 /* feedback */
 .feedback_heading {
   color: var(--blue);
@@ -133,12 +148,14 @@ p {
   margin-top: 81px;
   font: 800 40px Inter, sans-serif;
 }
+
 @media (max-width: 991px) {
   .feedback_heading {
     max-width: 100%;
     margin-top: 40px;
   }
 }
+
 /* FAQ section */
 .Faq_heading {
   color: var(--blue);
@@ -147,12 +164,14 @@ p {
   margin-top: 81px;
   font: 800 40px Inter, sans-serif;
 }
+
 @media (max-width: 991px) {
   .Faq_heading {
     max-width: 100%;
     margin-top: 40px;
   }
 }
+
 .faq_container {
   width: 80%;
   margin: 150px;

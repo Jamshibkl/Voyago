@@ -39,7 +39,7 @@ function AboutUs() {
             <h2>
               Empowering Journeys, Redefining Travel: Our Mission at Voyago
             </h2>
-            <p>
+            <p className="content-para">
               At Voyago, our mission is clear and resolute - to revolutionize
               the transportation experience by providing reliable and innovative
               solutions that transcend conventional norms. We are committed to
@@ -62,7 +62,7 @@ function AboutUs() {
               Beyond Boundaries: Voyago's Commitment to Safety, Transparency,
               and Innovative Excellence
             </h2>
-            <p>
+            <p className="content-para">
               Embark on a journey guided by Voyago's core values, where safety
               takes precedence in every step, ensuring a secure and protected
               travel experience. Transparency is woven into the fabric of our
@@ -80,7 +80,7 @@ function AboutUs() {
             </p>
           </div>
           <div className="content-Image">
-            <img src={img2} alt="" className="img-baout"/>
+            <img src={img2} alt="" className="img-about"/>
           </div>
         </div>
 
@@ -93,7 +93,7 @@ function AboutUs() {
               Pioneering Excellence: Meet the Innovators Steering Voyago's
               Vision
             </h2>
-            <p>
+            <p className="content-para">
               Embark on a journey with the dedicated minds of Voyago's team,
               where visionaries Sarah and Michael, as co-founders, lead with
               strategic insight and technological prowess. Sarah's expertise in
@@ -110,12 +110,14 @@ function AboutUs() {
           </div>
         </div>
       </div>
+
+
       <div className="driver ">
         <img src={driver} alt="" className="driver-img" />
 
         <div className="driver-content">
           <div className="join-Us ">
-            <h3>
+            <h3 className="join-Us-h3">
               Join us on a journey where the expertise and professionalism of
               Voyago's skilled drivers ensure that every ride is not just a
               destination but a testament to our commitment to excellence.

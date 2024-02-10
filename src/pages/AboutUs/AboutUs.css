@@ -7,7 +7,8 @@ body {
     width: 100%;
     margin: 20px;
 }
-.aboutSection{
+
+.aboutSection {
     width: 100%;
 }
 
@@ -41,37 +42,39 @@ body {
 
 .content {
     display: flex;
-    margin: 50px;
-    height: 476px;
+    margin: 70px 30px;
+    /* height: 476px; */
     /* background-color: blue; */
     justify-content: space-evenly;
     align-items: center;
-    margin: 0px;
+    padding:  20px 0;
 }
 
 .content .content-Container {
-    width: 600px;
+    width: 550px;
     background-color: #F4F4F4;
     border-radius: 15px;
 }
 
-.driver {
+/* .driver {
     height: 433.84px;
-}
-.content{
+} */
+
+/* .content {
     margin: 50px;
-}
+} */
 
 .content .content-Image img {
-    width: 525px;
+    width: 500px;
     border-radius: 5px;
 }
 
-.content .content-Container p {
+.content .content-Container .content-para {
     font-size: 16px;
     margin: 0;
     padding: 20px 30px;
     line-height: 1.3;
+    width: 100%;
 }
 
 .content .content-Container h2 {
@@ -81,6 +84,11 @@ body {
     margin: 0;
     color: var(--blue);
     font-weight: bold;
+}
+
+.driver{
+    width: 100%;
+    height: 433.84px;
 }
 
 .driver-img {
@@ -109,55 +117,64 @@ body {
     width: 445px;
     height: 227px;
 }
+
+.join-Us-h3{
+    font-size: 1.4rem;
+}
+
 .skilled_driver_h3 {
-    font-size: 1.75rem;
+    font-size: 1.3rem;
     margin-left: 20px;
 }
-.skilled_driver_para{
-    font-size: 20px;
-    width: 380px;
+
+.skilled_driver_para {
+    font-size: 18px;
+    width: 400px;
     margin-left: 25px;
 }
 
 
-.commitment-container{
+
+.commitment-container {
     width: 100%;
     margin-top: 100px;
 }
 
-.commitment{
-    margin: 30px 45px;
+.commitment {
+    margin: 30px 60px;
     background-color: #F4F4F4;
     border-radius: 25px;
 
 }
 
-.commitment h1{
-    padding-left: 58px;
-    padding-top: 20px;
+.commitment h1 {
+    padding: 20px 65px;
     font-weight: bold;
     color: var(--blue);
     margin-left: 6px;
+    font-size: 37px;
+    margin: 0;
 }
-.info-container{
+
+.info-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.commitment-info{
+.commitment-info {
     width: 600px;
 }
 
-.commitment-info p{
+.commitment-info p {
     font-size: 18px;
     color: hsl(0deg 1.15% 51.4% / 85%);
     line-height: 1.5;
-    width: 700px;
+    width: 600px;
     margin-left: 10px;
 }
 
-.commitment-img{
+.commitment-img {
     height: 450px;
     width: 450px;
 }

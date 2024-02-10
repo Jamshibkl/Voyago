@@ -2,6 +2,7 @@ import React from "react";
 import "./Safety.css";
 import safety from "../../Assets/safety.jpg";
 import covid from "../../Assets/covid19 family safety new bg.jpg";
+import safety_img from "../../Assets/istockphoto-1205892464-612x612.jpg";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
 
@@ -145,7 +146,7 @@ function Safety() {
           </p>
         </div>
         <div className="community-img">
-          <img className="image" src="" alt="" />
+          <img className="image" src={safety_img} alt="" />
         </div>
       </div>
 

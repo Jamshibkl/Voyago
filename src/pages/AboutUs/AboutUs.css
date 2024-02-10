@@ -3,7 +3,11 @@ body {
     padding: 0;
 }
 
-img {
+.Banner-img {
+    width: 100%;
+    margin: 20px;
+}
+.aboutSection{
     width: 100%;
 }
 
@@ -22,6 +26,7 @@ img {
     font-weight: 400;
     color: grey;
     margin-bottom: 15px;
+    width: 80%;
 }
 
 .aboutUs h4 {
@@ -53,6 +58,9 @@ img {
 .driver {
     height: 433.84px;
 }
+.content{
+    margin: 50px;
+}
 
 .content .content-Image img {
     width: 525px;
@@ -63,6 +71,7 @@ img {
     font-size: 16px;
     margin: 0;
     padding: 20px 30px;
+    line-height: 1.3;
 }
 
 .content .content-Container h2 {
@@ -70,6 +79,8 @@ img {
     text-align: center;
     padding: 15px;
     margin: 0;
+    color: var(--blue);
+    font-weight: bold;
 }
 
 .driver-img {
@@ -98,9 +109,20 @@ img {
     width: 445px;
     height: 227px;
 }
+.skilled_driver_h3 {
+    font-size: 1.75rem;
+    margin-left: 20px;
+}
+.skilled_driver_para{
+    font-size: 20px;
+    width: 380px;
+    margin-left: 25px;
+}
+
 
 .commitment-container{
     width: 100%;
+    margin-top: 100px;
 }
 
 .commitment{
@@ -113,6 +135,9 @@ img {
 .commitment h1{
     padding-left: 58px;
     padding-top: 20px;
+    font-weight: bold;
+    color: var(--blue);
+    margin-left: 6px;
 }
 .info-container{
     display: flex;
@@ -126,7 +151,10 @@ img {
 
 .commitment-info p{
     font-size: 18px;
-    color: hsla(0, 0%, 0%, 0.85);
+    color: hsl(0deg 1.15% 51.4% / 85%);
+    line-height: 1.5;
+    width: 700px;
+    margin-left: 10px;
 }
 
 .commitment-img{

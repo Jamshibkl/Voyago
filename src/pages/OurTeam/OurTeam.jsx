@@ -2,13 +2,15 @@ import React from "react";
 import "./OurTeam.css";
 import Founder1 from "../../Assets/kaushik.jpg";
 import Founder2 from "../../Assets/jamsheer-profile.jpeg";
-import Amigo from "../../Assets/Typing-amico.svg";
-import Revenue from "../../Assets/Revenue-bro.svg";
+import Amigo from "../../Assets/Team goals-cuate.svg";
+import Revenue from "../../Assets/Team spirit-cuate.svg";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
 
 function OurTeam() {
   return (
+    <>
+    <NavBar />
       <div className="conatiner">
         <div className="ourTeam">
           <h1>Our Team</h1>
@@ -23,10 +25,10 @@ function OurTeam() {
               <div className="co-Founder">
                 <img src={Founder1} alt="" />
                 <h4>
-                  Kaushik N <br /> Co-Founder and Visionary
-                </h4>
+                  Kaushik N <br /> <span>Co-Founder and Visionary
+                  </span> </h4>
                 <p>
-                  A visionary leader with a background in transportation, Sarah
+                  A visionary leader with a background in transportation, Kaushik
                   spearheads Voyago's strategic direction and innovation
                   initiatives. Her unwavering commitment to excellence drives
                   the company's mission forward.
@@ -36,10 +38,10 @@ function OurTeam() {
               <div className="co-Founder">
                 <img src={Founder2} alt="" />
                 <h4>
-                  Jamsheer CP <br /> Co-Founder and Technology Maestro
+                  Mohammed Jamsheer <br /> <span>Co-Founder and Technology Maestro</span>
                 </h4>
                 <p>
-                  Michael, the tech genius behind Voyago, leads the development
+                 Jamsheer, the tech genius behind Voyago, leads the development
                   of cutting-edge solutions. With a passion for innovation, he
                   ensures Voyago stays at the forefront of technological
                   advancements in the transportation industry.
@@ -52,7 +54,7 @@ function OurTeam() {
           <div className="commitments">
             <div className="ourContent">
               <div className="our-img">
-                <img src={Amigo} alt="" />
+                <img src={Amigo} alt="" className="img_commitment"/>
               </div>
               <div className="commitments-para">
                 <h3>Our Commitment to Diversity and Inclusion</h3>
@@ -92,6 +94,7 @@ function OurTeam() {
         </div>
         <Footer />
       </div>
+      </>
   );
 }
 

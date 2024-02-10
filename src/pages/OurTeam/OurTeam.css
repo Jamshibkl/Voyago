@@ -21,7 +21,7 @@ body {
     font-size: 60px;
     text-align: center;
     font-weight: bold;
-    color: rgb(0, 149, 255);
+    color: #407BFF;
 }
 
  .teamPara {
@@ -30,6 +30,7 @@ body {
     width: 100%;
     margin: 0;
     line-height: 1.5;
+    color: #8b8282;
 }
 
 .Founders {
@@ -44,7 +45,7 @@ body {
     font-weight: 700;
     text-align: center;
     padding: 20px 20px 40px 20px;
-    color: hsl(205, 100%, 50%);
+    color: #407BFF;
 }
 
 .founder {
@@ -54,7 +55,7 @@ body {
 }
 
 .co-Founder {
-    width: 330px;
+    width: 350px;
     padding: 15px;
     border-radius: 15px;
     background-color: #f4f4f4;
@@ -71,12 +72,16 @@ body {
     margin: 0;
     width: 300px;
     padding: 15px;
-    line-height: 1.2;
-    color: grey;
+    line-height: 1.5;
+    color: rgb(155, 149, 149);
+    font-size: 16px;
 }
 .co-Founder h4{
     text-align: center;
     font-size: 22px;
+}
+.co-Founder span {
+    font-size: 14px;
 }
 .ourCommitments {
     width: 100%;
@@ -94,10 +99,14 @@ body {
     align-items: center;
     background-color: #f4f4f4;
     border-radius: 8px;
+    height: 250px;
 }
 
 .our-img {
     width: 700px;
+}
+.img_commitment{
+    width: 300px;
 }
 
 .commitments-para {
@@ -107,8 +116,15 @@ body {
 
 .commitments-para h3 {
     padding: 15px;
+    font-weight: bold;
+    color: #407BFF;
 }
-
+.commitments-para p {
+    line-height: 2;
+    color: rgb(130, 127, 120);
+    width: 100%;
+    margin-left: 20px;
+}
 .Opportunities{
     margin: 150px 0 20px;
     display: flex;
@@ -121,7 +137,7 @@ body {
 .joinUs h2 {
     padding-top: 55px;
     text-align: center;
-    color: rgb(0, 149, 255);
+    color: #407BFF;
     font-weight: bold;
 }
 
@@ -138,7 +154,7 @@ body {
 
 .ourOpportunities h3 {
     text-align: left;
-    color: rgb(0, 149, 255);
+    color: #407BFF;
     font-weight: bold;
     padding: 20px 0;
 }
@@ -146,6 +162,10 @@ body {
 .ourOpportunities p {
     font-size: 21px;
     padding: 20px 0 25px;
+    line-height: 2;
+    color: #867e7e;
+    width: 100%;
+    margin-left: 10px;
 }
 
 .ourOpportunities button{
@@ -153,7 +173,7 @@ body {
     height: 55px;
     font-size: 17px;
     font-weight: 600;
-    background-color: rgba(0, 149, 255, 0.914) ;
+    background-color: #407BFF ;
     color: #fff;
     border: none;
     border-radius: 8px;

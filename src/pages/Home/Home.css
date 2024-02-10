@@ -10,7 +10,7 @@ body {
   font-family: sans-serif;
 }
 
-.navbar {
+.home-navbar{
   position: absolute;
   z-index: 1;
 }
@@ -68,7 +68,7 @@ p {
   margin-left: 120px;
 }
 
-h1 {
+.heading {
   font-size: 90px;
   font-weight: 900;
   margin-top: 80px;

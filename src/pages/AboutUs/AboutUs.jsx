@@ -6,10 +6,14 @@ import img2 from "../../Assets/photo_2024-02-06_13-13-53.jpg";
 import img3 from "../../Assets/photo_2024-02-06_13-13-32.jpg";
 import driver from "../../Assets/photo_2024-02-06_13-14-071.jpg";
 import innovation from "../../Assets/Innovation-bro.svg";
+import NavBar from "../../components/NavBar/NavBar";
+import Footer from "../../components/Footer/Footer";
 function AboutUs() {
   return (
+    <>
+    <NavBar />
     <div className="aboutSection">
-      <img src={AboutImg} alt="" />
+      <img src={AboutImg} alt="Banner-img"  style={{width:"100%"}}/>
 
       <div className="aboutUs">
         <h1 className="heading">About Us</h1>
@@ -29,7 +33,7 @@ function AboutUs() {
 
         <div className="content">
           <div className="content-Image">
-            <img src={img1} alt="" />
+            <img src={img1} alt="" className="img-about"/>
           </div>
           <div className="content-Container">
             <h2>
@@ -76,13 +80,13 @@ function AboutUs() {
             </p>
           </div>
           <div className="content-Image">
-            <img src={img2} alt="" />
+            <img src={img2} alt="" className="img-baout"/>
           </div>
         </div>
 
         <div className="content">
           <div className="content-Image">
-            <img src={img3} alt="" />
+            <img src={img3} alt="" className="img-about"/>
           </div>
           <div className="content-Container">
             <h2>
@@ -118,8 +122,8 @@ function AboutUs() {
             </h3>
           </div>
           <div className="skilled-driver">
-            <h3>Skilled Drivers:</h3>
-            <p>
+            <h3 className="skilled_driver_h3">Skilled Drivers:</h3>
+            <p className="skilled_driver_para">
               At Voyago, we take pride in our skilled drivers who form the
               heartbeat of our commitment to safe and reliable transportation.
               Each driver undergoes rigorous training and possesses relevant
@@ -155,12 +159,14 @@ function AboutUs() {
               </p>
             </div>
             <div className="commitment-img">
-              <img src={innovation} alt="" />
+              <img src={innovation} alt="" className="img-about"/>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 

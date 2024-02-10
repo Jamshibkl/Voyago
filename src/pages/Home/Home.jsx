@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import CarAnimate from "../../Assets/Car driving-rafiki (2).svg";
 import Feature from "../../components/Features/Feature";
 import HomeBanner from "../../components/banner/HomeBanner";
@@ -7,6 +8,7 @@ import Review from "../../components/Review/Review";
 import FAQ from "../../components/FAQ/FAQ";
 import Footer from "../../components/Footer/Footer";
 import "./Home.css";
+
 function Home() {
   return (
     <>
@@ -14,51 +16,57 @@ function Home() {
       <Navbar
         collapseOnSelect
         expand="lg"
-        className="navbar w-100 p-3 bg-transparent"
-      >
+        className="home-navbar w-100 p-3 bg-transparent">
         <Container className="nav_container">
-          <Navbar.Brand className="logo" href="#home">
+          <Navbar.Brand className="logo" as={Link} to="/">
             VOYAGO
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto nav_links">
-              <Nav.Link href="Home" className="nav-link-with-space">
+              <Nav.Link as={Link} to="/" className="nav-link-with-space">
                 Home
               </Nav.Link>
               <NavDropdown
                 title="Company"
                 id="collapsible-nav-dropdown"
-                className="dropdown-btn"
-              >
-                <NavDropdown.Item href="#action/3.1">About us</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                className="dropdown-btn">
+                <NavDropdown.Item as={Link} to="/about-us">
+                  About us
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/how-it-works">
                   How it Works
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Our Team</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item as={Link} to="/our-team">
+                  Our Team
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/service-status">
                   Service Status
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Leagal and Privacy
+                <NavDropdown.Item as={Link} to="/legal">
+                  Legal and Privacy
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#features" className="nav-link-with-space">
+              <Nav.Link as={Link} to="/safety" className="nav-link-with-space">
                 Safety
               </Nav.Link>
-              <Nav.Link href="#features" className="nav-link-with-space">
+              <Nav.Link as={Link} to="/contact" className="nav-link-with-space">
                 Contact
               </Nav.Link>
             </Nav>
 
             <Nav className="ms-auto">
               <Nav.Link
-                href="#deets"
-                className="nav-link-with-space text-light"
-              >
+                as={Link}
+                to="/login"
+                className="nav-link-with-space text-light">
                 Login
               </Nav.Link>
-              <Nav.Link eventKey={2} href="" className="signup-btn">
+              <Nav.Link
+                as={Link}
+                to="/signup"
+                eventKey={2}
+                className="signup-btn text-light border-light">
                 Sign Up
               </Nav.Link>
             </Nav>
@@ -71,7 +79,7 @@ function Home() {
       {/* Main  section */}
       <section className="main_section">
         <div className="main_left">
-          <h1>
+          <h1 className="heading">
             {" "}
             Get Skillful Drivers,
             <br />

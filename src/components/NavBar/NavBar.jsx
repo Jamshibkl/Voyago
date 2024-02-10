@@ -35,7 +35,7 @@ function NavBar() {
               <NavDropdown.Item as={Link} to="/service-status">
                 Service Status
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/legal">
+              <NavDropdown.Item as={Link} to="/leagal-privacy">
                 Legal and Privacy
               </NavDropdown.Item>
             </NavDropdown>

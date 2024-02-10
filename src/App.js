@@ -7,6 +7,7 @@ import OurTeam from "./pages/OurTeam/OurTeam";
 import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import Safety from "./pages/Safety/Safety";
 import ServiceStatus from "./pages/ServiceStatus/ServiceStatus";
+import LeagalPrivacy from "./pages/LeagalAandPrivacy/LeagalPrivacy";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/safety" element={<Safety />} />
           <Route path="/service-status" element={<ServiceStatus />} />
+          <Route path="/leagal-privacy" element={<LeagalPrivacy />} />
         </Routes>
       </Router>
     </div>

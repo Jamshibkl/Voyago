@@ -20,7 +20,7 @@ function HowItWorks() {
       <div className="how-it-works">
         <div className="rectangle-parent">
           <div className="passengers-wrapper">
-            <div className="passengers">
+            <div className="passengers2">
               <div className="component-parent">
                 <div className="rectangle-group">
                   <div className="component-child" />

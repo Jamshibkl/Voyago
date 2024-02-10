@@ -8,7 +8,7 @@ import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import Safety from "./pages/Safety/Safety";
 import ServiceStatus from "./pages/ServiceStatus/ServiceStatus";
 import LeagalPrivacy from "./pages/LeagalAandPrivacy/LeagalPrivacy";
-
+import ContactUs from "./pages/ContactUS/ContactUs";
 function App() {
   return (
     <div className="App">
@@ -21,6 +21,7 @@ function App() {
           <Route path="/safety" element={<Safety />} />
           <Route path="/service-status" element={<ServiceStatus />} />
           <Route path="/leagal-privacy" element={<LeagalPrivacy />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </Router>
     </div>

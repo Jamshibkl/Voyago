@@ -1,9 +1,11 @@
 import React from "react";
 import "./LeagalPrivacy.css";
 import Footer from "../../components/Footer/Footer";
-
+import NavBar from "../../components/NavBar/NavBar";
 function LeagalPrivacy() {
   return (
+    <>
+    <NavBar />
     <div className="main-container">
       <div className="inner-container">
         <h1>leagal and privacy</h1>
@@ -92,6 +94,7 @@ function LeagalPrivacy() {
       </div>
       <Footer/>
     </div>
+    </>
   );
 }
 

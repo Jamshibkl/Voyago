@@ -3,7 +3,10 @@
 body {
   margin: 0;
   line-height: normal;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
 }
+
 :root {
   /* fonts */
   --font-inter: Inter;
@@ -165,8 +168,7 @@ body {
   left: 0;
 }
 .car-driving-rafiki-2 {
-  top: 2510px;
-  left: 8.2px;
+  top: 2500px;
 }
 .for-passengers {
   position: absolute;
@@ -175,8 +177,7 @@ body {
   font-size: var(--font-size-17xl);
   display: inline-block;
   color: var(--color-darkslategray-100);
-  width: 279.1px;
-  height: 44.1px;
+  margin-left: -100px;
 }
 .blank-line {
   margin: 0;
@@ -287,7 +288,7 @@ body {
 .passengers-wrapper {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10PX;
   width: 1416.9px;
   height: 2961.2px;
 }
@@ -359,7 +360,7 @@ body {
   overflow: hidden;
 }
 .component-1-container {
-  width: 768px;
+  width: 740px;
   position: relative;
   height: 470px;
 }
@@ -405,8 +406,8 @@ body {
 .driver-section {
   position: absolute;
   top: 3350.9px;
-  left: 106.3px;
-  width: 1458.9px;
+  left: 100px;
+  width: 100%;
   height: 2853px;
   flex-direction: row;
   flex-wrap: wrap;
@@ -906,7 +907,6 @@ body {
   position: relative;
   display: flex;
   min-height: 500px;
-  margin-top: -33px;
   flex-grow: 1;
   flex-basis: 0%;
   align-items: end;

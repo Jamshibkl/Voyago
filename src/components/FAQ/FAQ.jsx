@@ -10,7 +10,7 @@ function FAQ() {
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cc702096ce94e02dd37457fd8c2126f46d09d8ac64a0ac5cd239b76824db412?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"
-              className="img"
+              className="faq_img"
             />
           </div>
         </div>
@@ -20,7 +20,7 @@ function FAQ() {
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/d7b9be934d018440e8de43ba487233583a7100b4e5991caa22d5bc541843bd9d?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"
-              className="img-2"
+              className="faq_img-2"
             />
           </div>
         </div>
@@ -30,7 +30,7 @@ function FAQ() {
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cc702096ce94e02dd37457fd8c2126f46d09d8ac64a0ac5cd239b76824db412?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"
-              className="img"
+              className="faq_img"
             />
           </div>
         </div>
@@ -40,7 +40,7 @@ function FAQ() {
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cc702096ce94e02dd37457fd8c2126f46d09d8ac64a0ac5cd239b76824db412?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"
-              className="img-3"
+              className="faq_img-3"
             />
           </div>
         </div>
@@ -50,7 +50,7 @@ function FAQ() {
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cc702096ce94e02dd37457fd8c2126f46d09d8ac64a0ac5cd239b76824db412?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"
-              className="img"
+              className="faq_img"
             />
           </div>
         </div>
@@ -60,7 +60,7 @@ function FAQ() {
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/d7b9be934d018440e8de43ba487233583a7100b4e5991caa22d5bc541843bd9d?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"
-              className="img"
+              className="faq_img"
             />
           </div>
         </div>
@@ -110,7 +110,7 @@ function FAQ() {
           flex-basis: auto;
           margin: auto 0;
         }
-        .img {
+        .faq_img {
           aspect-ratio: 0.96;
           object-fit: auto;
           object-position: center;
@@ -148,7 +148,7 @@ function FAQ() {
           flex-basis: auto;
           margin: auto 0;
         }
-        .img-2 {
+        .faq_img-2 {
           aspect-ratio: 0.94;
           object-fit: auto;
           object-position: center;
@@ -218,7 +218,7 @@ function FAQ() {
           flex-basis: auto;
           margin: auto 0;
         }
-        .img-3 {
+        .faq_img-3 {
           aspect-ratio: 0.92;
           object-fit: auto;
           object-position: center;

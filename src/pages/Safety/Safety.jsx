@@ -22,7 +22,7 @@ function Safety() {
       </div>
       <div className="passengerSafety">
         <h2>Passenger Safety</h2>
-        <div className="passengers">
+        <div className="safety_passengers">
           <div className="safetys">
             <h4>Driver Screening</h4>
             <p>

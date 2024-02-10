@@ -2,10 +2,13 @@ import React from "react";
 import "./Safety.css";
 import safety from "../../Assets/safety.jpg";
 import covid from "../../Assets/covid19 family safety new bg.jpg";
+import Footer from "../../components/Footer/Footer";
+import NavBar from "../../components/NavBar/NavBar";
 
 function Safety() {
   return (
     <div className="safety-section">
+      <NavBar/>
       <div className="ourSafety">
         <div className="info">
           <h1>Safe Journeys Start Here: Voyago's Commitment to Safety</h1>
@@ -20,9 +23,10 @@ function Safety() {
           <img className="image" src={safety} alt="" />
         </div>
       </div>
-      <div className="passengerSafety">
+
+      <div className="our-section2">
         <h2>Passenger Safety</h2>
-        <div className="passengers">
+        <div className="passengers-section">
           <div className="safetys">
             <h4>Driver Screening</h4>
             <p>
@@ -49,11 +53,9 @@ function Safety() {
             </p>
           </div>
         </div>
-      </div>
 
-      <div className="driverSafety">
         <h2>Driver Safety</h2>
-        <div className="drivers">
+        <div className="drivers-section">
           <div className="safetys">
             <h4>Passenger Verification</h4>
             <p>
@@ -100,6 +102,83 @@ function Safety() {
           </div>
         </div>
       </div>
+
+      <div className="covid-safety">
+        <div className="covid-safety-section">
+          <i class="fa-solid fa-pump-soap"></i>
+          <h4>Sanitization Protocols</h4>
+          <p>
+            In response to the COVID-19 pandemic, we have implemented rigorous
+            sanitization protocols for our vehicles. High-touch surfaces are
+            regularly cleaned and disinfected to minimize the risk of
+            transmission.
+          </p>
+        </div>
+        <div className="covid-safety-section">
+          <h4>Contactless Experience</h4>
+          <p>
+            Face coverings are mandatory for both passengers and drivers during
+            rides. This helps reduce the spread of respiratory droplets and
+            enhances the safety of everyone onboard.
+          </p>
+        </div>
+        <div className="covid-safety-section">
+          <h4>Secure Payments</h4>
+          <p>
+            Minimize physical contact during your ride with our contactless
+            experience. Book, pay, and communicate with your driver through the
+            Voyago app to maintain a safe distance and reduce the risk of
+            transmission.
+          </p>
+        </div>
+      </div>
+
+      <div className="communitySafety">
+        <div className="community-info">
+          <h1 className="community-heading">Community Safety</h1>
+          <p className="community-para">
+            Our commitment to community safety extends to empowering passengers
+            and drivers alike. Our reporting features allow for swift action on
+            safety concerns, while our focus on safety education fosters
+            awareness and proactive measures within our community, ensuring a
+            secure and trustworthy environment for all.
+          </p>
+        </div>
+        <div className="community-img">
+          <img className="image" src="" alt="" />
+        </div>
+      </div>
+
+      <div className="safety-features">
+        <div className="reporting-Features">
+          <h5 className="feature-heading">Reporting Features</h5>
+          <p className="feature-para">
+            Our reporting features empower both passengers and drivers to report
+            any safety concerns or incidents they encounter during their ride.
+            Prompt action is taken to address reported issues and ensure the
+            safety of our community.
+          </p>
+        </div>
+        <div className="safety-Education">
+          <h5 className="feature-heading">Safety Education</h5>
+          <p className="feature-para">
+            We believe in fostering a culture of safety awareness and education
+            within our community. Resources and tips on staying safe while using
+            Voyago are readily available to passengers and drivers.
+          </p>
+        </div>
+      </div>
+
+      <div className="contact-team">
+        <h4 className="contact-heading">Contact Us</h4>
+        <h6 className="contact-heading">Have Questions?</h6>
+        <p className="team-para">
+          If you have any questions or concerns about safety on Voyago, please
+          don't hesitate to contact us. Our support team is available to assist
+          you and address any inquiries you may have.
+        </p>
+      </div>
+      <Footer/>
     </div>
   );
 }

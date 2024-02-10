@@ -5,7 +5,7 @@ import Founder2 from "../../Assets/jamsheer-profile.jpeg";
 import Amigo from "../../Assets/Team goals-cuate.svg";
 import Revenue from "../../Assets/Team spirit-cuate.svg";
 import Footer from "../../components/Footer/Footer";
-
+import NavBar from "../../components/NavBar/NavBar";
 function OurTeam() {
   return (
     <>

@@ -74,10 +74,10 @@ function ContactUs() {
                   and announcements:
                 </p>
                 <div className="contact_social_icons">
-                  <FontAwesomeIcon icon={faFacebook} />
-                  <FontAwesomeIcon icon={faInstagram} />
-                  <FontAwesomeIcon icon={faXTwitter} />
-                  <FontAwesomeIcon icon={faYoutube} />
+                  <FontAwesomeIcon icon={faFacebook}  className="FontAwesomeIcon"/>
+                  <FontAwesomeIcon icon={faInstagram} className="FontAwesomeIcon"/>
+                  <FontAwesomeIcon icon={faXTwitter} className="FontAwesomeIcon"/>
+                  <FontAwesomeIcon icon={faYoutube} className="FontAwesomeIcon"/>
                 </div>
               </div>
             </div>

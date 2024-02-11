@@ -7,7 +7,7 @@
 }
 
 .footer-content {
-    margin: 0 100px;
+    margin: 0 ;
     width: 100%;
 }
 
@@ -15,7 +15,7 @@
     display: flex;
     height: 40px;
     margin: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .voyago {
@@ -69,12 +69,15 @@
 .links {
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px;
 }
 
 .links p {
+    width: 100%;
     color: white;
     font-size: 17px;
     cursor: pointer;
+    padding: 10px;
+    margin: 0;
 }

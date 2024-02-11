@@ -9,20 +9,20 @@ function ServiceStatus(props) {
     <>
       <NavBar />
       <div className="service">
-        {/* <div className="service-2">Service Status</div> */}
+        <div className="service-2">Service Status</div>
         <div className="service-3">
           <div className="service-4">
             <div className="column">
               <div className="service-5">
                 <div className="service-6">
                   Real-Time Updates on Voyago's Service Status
-                </div>{" "}
+                </div>
                 <div className="service-7">
                   Stay informed about the status of Voyago's services with
                   real-time updates on availability, performance, and any
                   potential disruptions.
                 </div>
-                <div className="service-8">Book a Driver</div>
+                {/* <div className="service-8">Book a Driver</div> */}
               </div>
             </div>
             <div className="column-2">

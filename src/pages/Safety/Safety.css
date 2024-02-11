@@ -30,9 +30,10 @@
 }
 
 .info p {
-    padding: 15px 10px 0 0;
+    padding: 15px 20px 0 0;
     margin: 0;
     width: 100%;
+    color: rgba(47, 47, 47, 0.779);
     font-size: 25px;
     line-height: 1.2;
 }
@@ -81,7 +82,7 @@
 }
 
 .safetys {
-    width: 400px;
+    width: 330px;
     height: 300px;
     background-color: #f4f4f4;
     margin-bottom: 40px;
@@ -98,7 +99,8 @@
 }
 
 .safetys p {
-    padding: 10px 34px;
+    width: 330px;
+    padding: 10px 20px;
     margin: 0;
     line-height: 1.5;
     font-size: 19px;
@@ -209,14 +211,14 @@
 
 .community-info .community-heading {
     color: var(--blue);
-    padding: 0;
+    padding: 0 30px ;
     margin: 0;
     font-size: 40px;
     margin-bottom: 15px;
 }
 
 .community-info .community-para {
-    padding: 15px 10px 0 0;
+    padding: 15px 10px 0 30px;
     margin: 0;
     width: 100%;
     font-size: 25px;

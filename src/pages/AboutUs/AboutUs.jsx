@@ -1,10 +1,10 @@
 import React from "react";
 import "./AboutUs.css";
-import AboutImg from "../../Assets/about.jpg";
+import AboutImg from "../../Assets/about-banner-img.jpg";
 import img1 from "../../Assets/photo_2024-02-06_13-13-44.jpg";
 import img2 from "../../Assets/photo_2024-02-06_13-13-53.jpg";
 import img3 from "../../Assets/photo_2024-02-06_13-13-32.jpg";
-import driver from "../../Assets/photo_2024-02-06_13-14-071.jpg";
+import driver from "../../Assets/horizontal-banner-img.jpg";
 import innovation from "../../Assets/Innovation-bro.svg";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";

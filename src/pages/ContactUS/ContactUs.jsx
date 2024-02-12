@@ -2,6 +2,7 @@ import React from "react";
 import "./ContactUs.css";
 import NavBar from "../../components/NavBar/NavBar";
 import ContactImg from "../../Assets/Messaging fun-rafiki.svg";
+import AdressImage from '../../Assets/Simple-Location-Picker (1).webp'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "../../components/Footer/Footer";
 import {
@@ -31,10 +32,10 @@ function ContactUs() {
           </div>
           <div className="form_contact">
             <div className="contact_form">
-              <h3 className="form_heading">Online Form</h3>
+              <h3 className="form_heading">Get in Touch</h3>
               <p className="form_para">
                 Fill out the form below to send us a message. Our team will
-                respond to your inquiry as soon as possible.
+               <br /> respond to your inquiry as soon as possible.
               </p>
               <form action="" method="POST" className="form_sectipon">
                 <input
@@ -70,7 +71,7 @@ function ContactUs() {
               </form>
               <div className="form_social">
                 <p className="social_para">
-                  Connect with us on social media for the latest updates, news,
+                  Connect with us on social media for the latest updates,<br /> news,
                   and announcements:
                 </p>
                 <div className="contact_social_icons">
@@ -113,19 +114,19 @@ function ContactUs() {
           </p>
         </div>
         <div className="right_information">
-          <h2 className="information_heading">Our Office</h2>
-          <h4 className="information_subheading">Address</h4>
-          <p className="information_para">
-            23 Main Street, Cityville, State, Country <br />
-            Zip Code: 12345
-          </p>
-
           <h2 className="information_heading">Hours of Operation</h2>
           <h4 className="information_subheading">Customer Support</h4>
           <p className="information_para">
             Monday - Friday: 9:00 AM - 5:00 PM (Local Time) <br />
             Saturday - Sunday: Closed
           </p>
+          <h2 className="information_heading">Our Office</h2>
+          <h4 className="information_subheading">Address</h4>
+          <p className="information_para">
+            23 Main Street, Cityville, State, Country <br />
+            Zip Code: 12345
+          </p>
+          <img src={AdressImage} alt="" className="our_address_img"/>
         </div>
       </section>
       <Footer />

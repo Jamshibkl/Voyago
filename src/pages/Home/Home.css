@@ -18,11 +18,11 @@ body {
   position: absolute;
   z-index: 1;
 }
-/* .navbar_section{
+.navbar_section{
   -webkit-box-shadow: 10px 10px 34px -27px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 34px -27px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 34px -27px rgba(0,0,0,0.75)
-  } */
+  }
 
 .logo {
   color: var(--blue);

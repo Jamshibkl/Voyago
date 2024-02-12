@@ -5,7 +5,7 @@ import NavBar from "../NavBar/NavBar";
 
 function SignInUp() {
   useEffect(() => {
-    const container = document.getElementById("container1"); // Change 'container' to 'container1'
+    const container = document.getElementById("container1"); 
     const registerBtn = document.getElementById("register");
     const loginBtn = document.getElementById("login");
 

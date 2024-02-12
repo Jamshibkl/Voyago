@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+// import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+// import { Link } from "react-router-dom";
 import CarAnimate from "../../Assets/Car driving-rafiki (2).svg";
 import Feature from "../../components/Features/Feature";
 import HomeBanner from "../../components/banner/HomeBanner";
@@ -8,14 +8,14 @@ import Review from "../../components/Review/Review";
 import FAQ from "../../components/FAQ/FAQ";
 import Footer from "../../components/Footer/Footer";
 import "./Home.css";
-// import NavBar from "../../components/NavBar/NavBar";
+import NavBar from "../../components/NavBar/NavBar";
 
 function Home() {
   return (
     <>
       {/* Header */}
-      {/* <NavBar/> */}
-      <Navbar
+      <NavBar/>
+      {/* <Navbar
         collapseOnSelect
         expand="lg"
         className="navbar_section"
@@ -79,7 +79,7 @@ function Home() {
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar> */}
 
       {/* Header section */}
 

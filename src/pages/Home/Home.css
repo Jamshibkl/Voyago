@@ -9,33 +9,46 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
+/* 
+#nav-bar-section{
+  padding: 5px;
+  background: transparent;
+}
 .home-navbar{
   position: absolute;
   z-index: 1;
 }
+.navbar_section{
+  -webkit-box-shadow: 10px 10px 34px -27px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 34px -27px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 34px -27px rgba(0,0,0,0.75)
+  }
 
 .logo {
   color: var(--blue);
   font-weight: bold;
   font-size: 30px;
   font-family: monospace;
+  margin: 0 40px;
 }
 
-.nav-link-with-space {
-  margin-right: 4rem;
-  /* Adjust the value as per your preference */
-  margin-left: 4rem;
-  /* Adjust the value as per your preference */
+.me-auto .nav-link-with-space{
+  margin: 0 40px;
   font-size: 20px;
   color: black;
   font-weight: bold;
 }
 
-.dropdown-btn {
+
+#collapsible-nav-dropdown {
   font-size: 20px;
   color: black;
   font-weight: bold;
+}
+.dropdown-items{
+  padding: 7px ;
+  text-align: center;
+  font-weight: 500;
 }
 .signup-btn {
   border: 2px solid white;
@@ -45,11 +58,12 @@ body {
   font-size: 20px;
   color: var(--white);
   font-weight: bold;
-}
+} */
 
 /* main section */
 .main_section {
   width: 100%;
+  margin-top: -65px;
   display: flex;
   justify-content: space-between;
 }
@@ -99,7 +113,7 @@ p {
 
 .car_avtar {
   width: 700px;
-  margin-left: -220px;
+  margin-left: -180px;
   margin-top: -50px;
 }
 

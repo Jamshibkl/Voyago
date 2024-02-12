@@ -8,9 +8,10 @@ function NavBar() {
     <Navbar
       collapseOnSelect
       expand="lg"
-      className="navbar_section w-100 p-3 bg-transparent">
+      className="navbar navbar_section"
+      id="nav-bar-section">
       <Container className="nav_container">
-        <Navbar.Brand className="logo" as={Link} to="/">
+        <Navbar.Brand className="logo" >
           VOYAGO
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -23,19 +24,19 @@ function NavBar() {
               title="Company"
               id="collapsible-nav-dropdown"
               className="dropdown-btn">
-              <NavDropdown.Item as={Link} to="/about-us">
+              <NavDropdown.Item as={Link} to="/about-us" className="dropdown-items">
                 About us
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/how-it-works">
+              <NavDropdown.Item as={Link} to="/how-it-works" className="dropdown-items">
                 How it Works
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/our-team">
+              <NavDropdown.Item as={Link} to="/our-team" className="dropdown-items">
                 Our Team
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/service-status">
+              <NavDropdown.Item as={Link} to="/service-status" className="dropdown-items">
                 Service Status
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/leagal-privacy">
+              <NavDropdown.Item as={Link} to="/leagal-privacy"className="dropdown-items">
                 Legal and Privacy
               </NavDropdown.Item>
             </NavDropdown>

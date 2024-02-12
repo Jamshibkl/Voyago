@@ -1,19 +1,31 @@
 import React from "react";
+import { useEffect } from "react";
 import "./SignInUp.css";
 import NavBar from "../NavBar/NavBar";
 
 function SignInUp() {
-    // const container = document.getElementById("container");
-    // const registerBtn = document.getElementById("register");
-    // const loginBtn = document.getElementById("login");
+  useEffect(() => {
+    const container = document.getElementById("container1"); // Change 'container' to 'container1'
+    const registerBtn = document.getElementById("register");
+    const loginBtn = document.getElementById("login");
 
-    // registerBtn.addEventListener("click", () => {
-    //   container.classList.add("active");
-    // });
+    registerBtn.addEventListener("click", () => {
+        container.classList.add("active");
+    });
 
-    // loginBtn.addEventListener("click", () => {
-    //   container.classList.remove("active");
-    // });
+    loginBtn.addEventListener("click", () => {
+        container.classList.remove("active");
+    });
+
+    return () => {
+        registerBtn.removeEventListener("click", () => {
+            container.classList.add("active");
+        });
+        loginBtn.removeEventListener("click", () => {
+            container.classList.remove("active");
+        });
+    };
+}, []); 
 
   return (
     <>

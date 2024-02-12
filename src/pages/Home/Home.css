@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
 }
-/* 
+
 #nav-bar-section{
   padding: 5px;
   background: transparent;
@@ -18,11 +18,11 @@ body {
   position: absolute;
   z-index: 1;
 }
-.navbar_section{
+/* .navbar_section{
   -webkit-box-shadow: 10px 10px 34px -27px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 34px -27px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 34px -27px rgba(0,0,0,0.75)
-  }
+  } */
 
 .logo {
   color: var(--blue);
@@ -58,7 +58,7 @@ body {
   font-size: 20px;
   color: var(--white);
   font-weight: bold;
-} */
+}
 
 /* main section */
 .main_section {

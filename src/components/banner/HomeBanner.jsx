@@ -20,7 +20,7 @@ function HomeBanner() {
               <div className="banner-7">Get Started Today</div>
             </div>
           </div>
-          <div className="column-2">
+          <div className="home_banner_img">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/f768f874a1f8d1900f551a28b29b8fe5413c96be8bb06df27a70dcf53949b82c?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"

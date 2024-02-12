@@ -18,7 +18,7 @@ function Home() {
       <Navbar
         collapseOnSelect
         expand="lg"
-        className="navbar_section"
+        className=""
         id="nav-bar-section"
       >
         <Container className="nav_container">
@@ -63,14 +63,14 @@ function Home() {
             <Nav className="ms-auto">
               <Nav.Link
                 as={Link}
-                to="/login"
+                to="/sign-in"
                 className="nav-link-with-space text-light"
               >
                 Login
               </Nav.Link>
               <Nav.Link
                 as={Link}
-                to="/signup"
+                to="/sign-up"
                 eventKey={2}
                 className="signup-btn text-light border-light"
               >

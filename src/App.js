@@ -9,6 +9,7 @@ import Safety from "./pages/Safety/Safety";
 import ServiceStatus from "./pages/ServiceStatus/ServiceStatus";
 import LeagalPrivacy from "./pages/LeagalAandPrivacy/LeagalPrivacy";
 import ContactUs from "./pages/ContactUS/ContactUs";
+import SignInUp from "./components/Sign-in-up/SignInUp";
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,8 @@ function App() {
           <Route path="/service-status" element={<ServiceStatus />} />
           <Route path="/leagal-privacy" element={<LeagalPrivacy />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/sign-in" element={<SignInUp />} />
+          <Route path="/sign-up" element={<SignInUp />} />
         </Routes>
       </Router>
     </div>

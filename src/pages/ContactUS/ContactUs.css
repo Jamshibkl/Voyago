@@ -107,10 +107,9 @@ body {
 /* information section */
 .contact_information {
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(232, 232, 232);
+  background-color: rgba(232, 232, 232, 0.35);
 }
 .left_information {
   margin: 50px 200px;

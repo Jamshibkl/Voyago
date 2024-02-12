@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import CarAnimate from "../../Assets/Car driving-rafiki (2).svg";
 import Feature from "../../components/Features/Feature";
 import HomeBanner from "../../components/banner/HomeBanner";
@@ -8,15 +8,19 @@ import Review from "../../components/Review/Review";
 import FAQ from "../../components/FAQ/FAQ";
 import Footer from "../../components/Footer/Footer";
 import "./Home.css";
+import NavBar from "../../components/NavBar/NavBar";
 
 function Home() {
   return (
     <>
       {/* Header */}
-      <Navbar
+      <NavBar/>
+      {/* <Navbar
         collapseOnSelect
         expand="lg"
-        className="home-navbar w-100 p-3 bg-transparent">
+        className="navbar_section"
+        id="nav-bar-section"
+      >
         <Container className="nav_container">
           <Navbar.Brand className="logo" as={Link} to="/">
             VOYAGO
@@ -30,24 +34,25 @@ function Home() {
               <NavDropdown
                 title="Company"
                 id="collapsible-nav-dropdown"
-                className="dropdown-btn">
-                <NavDropdown.Item as={Link} to="/about-us">
+                className="dropdown-btn"
+              >
+                <NavDropdown.Item as={Link} to="/about-us" className="dropdown-items">
                   About us
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/how-it-works">
+                <NavDropdown.Item as={Link} to="/how-it-works" className="dropdown-items">
                   How it Works
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/our-team">
+                <NavDropdown.Item as={Link} to="/our-team" className="dropdown-items">
                   Our Team
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/service-status">
+                <NavDropdown.Item as={Link} to="/service-status" className="dropdown-items">
                   Service Status
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/legal">
+                <NavDropdown.Item as={Link} to="/legal" className="dropdown-items">
                   Legal and Privacy
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link as={Link} to="/safety" className="nav-link-with-space">
+              <Nav.Link as={Link} to="/safety" className="nav-link-with-space" >
                 Safety
               </Nav.Link>
               <Nav.Link as={Link} to="/contact" className="nav-link-with-space">
@@ -59,20 +64,22 @@ function Home() {
               <Nav.Link
                 as={Link}
                 to="/login"
-                className="nav-link-with-space text-light">
+                className="nav-link-with-space text-light"
+              >
                 Login
               </Nav.Link>
               <Nav.Link
                 as={Link}
                 to="/signup"
                 eventKey={2}
-                className="signup-btn text-light border-light">
+                className="signup-btn text-light border-light"
+              >
                 Sign Up
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar> */}
 
       {/* Header section */}
 

@@ -8,11 +8,6 @@
 }
 
 body{
-   /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; */
-    /* height: 100vh; */
     margin: 0;
     padding: 0;
 }
@@ -164,7 +159,7 @@ body{
     z-index: 1000;
 }
 
-.container1.active .toggle-container1{
+.container1.active .toggle-container{
     transform: translateX(-100%);
     border-radius: 0 150px 100px 0;
 }

@@ -1,51 +1,36 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useState } from "react";
+import Navbar  from "../NavBar/NavBar";
 import "./SignInUp.css";
-import NavBar from "../NavBar/NavBar";
 
 function SignInUp() {
-  useEffect(() => {
-    const container = document.getElementById("container1"); 
-    const registerBtn = document.getElementById("register");
-    const loginBtn = document.getElementById("login");
+  const [isActive, setIsActive] = useState(false);
 
-    registerBtn.addEventListener("click", () => {
-        container.classList.add("active");
-    });
+  const handleRegisterClick = () => {
+    setIsActive(true);
+  };
 
-    loginBtn.addEventListener("click", () => {
-        container.classList.remove("active");
-    });
-
-    return () => {
-        registerBtn.removeEventListener("click", () => {
-            container.classList.add("active");
-        });
-        loginBtn.removeEventListener("click", () => {
-            container.classList.remove("active");
-        });
-    };
-}, []); 
-
+  const handleLoginClick = () => {
+    setIsActive(false);
+  };
   return (
-    <>
-      <NavBar />
+    <div>
+      <Navbar/>
       <div className="main-container-sign">
-        <div className="container1" id="container1">
+        <div className={`container1 ${isActive ? "active" : ""}`}>
           <div className="form-container sign-up">
             <form>
               <h1>Create Account</h1>
               <div className="social-icons">
-                <a href="#" class="icon"></a>
-                <a href="#" class="icon"></a>
-                <a href="#" class="icon"></a>
-                <a href="#" class="icon"></a>
+                <a href="#" className="icon"></a>
+                <a href="#" className="icon"></a>
+                <a href="#" className="icon"></a>
+                <a href="#" className="icon"></a>
               </div>
-              <span>or use your email for registeration</span>
-              <input type="text" placeholder="Name"></input>
-              <input type="email" placeholder="Email"></input>
-              <input type="password" placeholder="Password"></input>
-              <button>Sign Up</button>
+              <span>or use your email for registration</span>
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <button onClick={handleRegisterClick}>Sign Up</button>
             </form>
           </div>
 
@@ -53,16 +38,16 @@ function SignInUp() {
             <form>
               <h1>Sign In</h1>
               <div className="social-icons">
-                <a href="#" class="icon"></a>
-                <a href="#" class="icon"></a>
-                <a href="#" class="icon"></a>
-                <a href="#" class="icon"></a>
+                <a href="#" className="icon"></a>
+                <a href="#" className="icon"></a>
+                <a href="#" className="icon"></a>
+                <a href="#" className="icon"></a>
               </div>
               <span>or use your email password</span>
-              <input type="email" placeholder="Email"></input>
-              <input type="password" placeholder="Password"></input>
+              <input type="email" placeholder="Email" />
+              <input type="password" placeholder="Password" />
               <a href="#">Forget Your Password?</a>
-              <button>Sign In</button>
+              <button onClick={handleLoginClick}>Sign In</button>
             </form>
           </div>
           <div className="toggle-container">
@@ -70,7 +55,7 @@ function SignInUp() {
               <div className="toggle-panel toggle-left">
                 <h1>Welcome Back!</h1>
                 <p>Enter your personal details to use all of site features</p>
-                <button class="hidden" id="login">
+                <button className="hidden" onClick={handleLoginClick}>
                   Sign In
                 </button>
               </div>
@@ -80,7 +65,7 @@ function SignInUp() {
                   Register with your personal details to use all of site
                   features
                 </p>
-                <button class="hidden" id="register">
+                <button className="hidden" onClick={handleRegisterClick}>
                   Sign Up
                 </button>
               </div>
@@ -88,7 +73,7 @@ function SignInUp() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

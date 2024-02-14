@@ -1,6 +1,6 @@
 import React from "react";
 import "./BookADriver.css";
-import about from "../../Assets/about-banner-img.jpg";
+import about from "../../Assets/book a drive image.jpg";
 
 function BookADriver() {
   return (

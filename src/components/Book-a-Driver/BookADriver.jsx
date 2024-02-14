@@ -1,9 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./BookADriver.css";
 import about from "../../Assets/book a drive image.jpg";
-
+import NavBar from '../../components/NavBar/NavBar'
+import Footer from '../../components/Footer/Footer'
 function BookADriver() {
   return (
+    <>
+    <NavBar />
     <div className="bookADriver">
       <div className="driver-img">
         <img src={about} alt="" />
@@ -17,9 +21,15 @@ function BookADriver() {
           today?
         </p>
         <div className="driver-btn">
+          <Link to='/local'>
           <button className="btn">Local</button>
+          </Link>
+          <Link to='/outstation'> 
           <button className="btn">Outstation</button>
+          </Link>
+          <Link to='/permanent'>
           <button className="btn">Permanent</button>
+          </Link>
         </div>
         <div className="driver-content-section">
           <div className="driver-booking-type">
@@ -48,6 +58,8 @@ function BookADriver() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 

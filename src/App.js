@@ -12,6 +12,8 @@ import BookADriver from "./components/Book-a-Driver/BookADriver"
 import ContactUs from "./pages/ContactUS/ContactUs";
 import SignInUp from "./components/Sign-in-up/SignInUp";
 import Local from "./components/Booking-form/Local/Local"
+import Outstation from "./components/Booking-form/Outstation/Outstation";
+import Permanent from "./components/Booking-form/Permanent/Permanent";
 function App() {
   return (
     <div className="App">
@@ -28,6 +30,9 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/sign-in" element={<SignInUp />} />
           <Route path="/sign-up" element={<Local />} />
+          <Route path="/local" element={<Local />} />
+          <Route path="/outstation" element={<Outstation />} />
+          <Route path="/permanent" element={<Permanent />} />
         </Routes>
       </Router>
     </div>

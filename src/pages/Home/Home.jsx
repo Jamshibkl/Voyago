@@ -118,7 +118,9 @@ function Home() {
             Voyago transforms the way you travel. Bringing skillful drivers to
             your doorstep, we make owning a car a pleasure.
           </p>
+          <Link to='/book-a-driver'>
           <button className="main_btn">Book a Driver</button>
+          </Link>
         </div>
         <div className="main-right">
           <div className="main_container">

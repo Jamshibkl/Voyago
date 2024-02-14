@@ -1,5 +1,5 @@
 
-.local_section{  
+.outstation_section{  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +15,7 @@
         0 32px 64px -48px rgba(0, 0, 0, 0.5);
 }
 
-.wrapper-section .local-header h2{
+.wrapper-section .outstation-header h2{
     width: 100%;
     margin:12px 0 10px 0;
     padding: 0;
@@ -23,7 +23,12 @@
     text-align: center;
     width: 100%;
 }
-
+.radio_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 .form-section{
     padding: 0 30px;
 }

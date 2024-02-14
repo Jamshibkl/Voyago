@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Local.css";
+import "./Permanent.css";
 // import NavBar from "../../NavBar/NavBar";
-function Local() {
+function Permanent() {
   const [pickupDate, setPickupDate] = useState("");
   const [pickupTime, setPickupTime] = useState("");
 
@@ -28,10 +28,10 @@ function Local() {
   return (
     <>
     {/* <NavBar /> */}
-    <div className="local_section">
+    <div className="Permanent_section">
       <div className="wrapper-section">
-        <div className="local-header">
-          <h2>Book Driver for Local Trip</h2>
+        <div className="Permanent-header">
+          <h2>Book Permanent Driver for Trip</h2>
         </div>
         <section className="form-section">
           <form>
@@ -53,7 +53,7 @@ function Local() {
                 <input type="email" placeholder="Email Address" />
               </div>
               <div className="field input">
-                <input type="text" placeholder="Pick up City" />
+                <input type="text" placeholder="City" />
               </div>
             </div>
 
@@ -95,12 +95,10 @@ function Local() {
               </div>
               <div className="field input">
                 <select>
-                  <option value="">-Trip Type-</option>
-                  <option value="">4Hr</option>
-                  <option value="">6Hr</option>
-                  <option value="">8Hr</option>
-                  <option value="">10Hr</option>
-                  <option value="">12Hr</option>
+                <option value="">-Cab Model-</option>
+                  <option value="">BMW</option>
+                  <option value="">Audi</option>
+                  <option value="">Benz</option>
                 </select>
               </div>
             </div>
@@ -131,4 +129,4 @@ function Local() {
   );
 }
 
-export default Local;
+export default Permanent;

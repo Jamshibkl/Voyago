@@ -15,12 +15,7 @@ function Home() {
     <>
       {/* Header */}
       {/* <NavBar/> */}
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        className=""
-        id="nav-bar-section"
-      >
+      <Navbar collapseOnSelect expand="lg" className="" id="nav-bar-section">
         <Container className="nav_container">
           <Navbar.Brand className="logo" as={Link} to="/">
             VOYAGO
@@ -36,23 +31,50 @@ function Home() {
                 id="collapsible-nav-dropdown"
                 className="dropdown-btn"
               >
-                <NavDropdown.Item as={Link} to="/about-us" className="dropdown-items">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/about-us"
+                  className="dropdown-items"
+                >
                   About us
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/how-it-works" className="dropdown-items">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/how-it-works"
+                  className="dropdown-items"
+                >
                   How it Works
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/our-team" className="dropdown-items">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/our-team"
+                  className="dropdown-items"
+                >
                   Our Team
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/service-status" className="dropdown-items">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/service-status"
+                  className="dropdown-items"
+                >
                   Service Status
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/legal" className="dropdown-items">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/legal"
+                  className="dropdown-items"
+                >
                   Legal and Privacy
                 </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/book-a-driver"
+                  className="dropdown-items"
+                >
+                  Book a Driver
+                </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link as={Link} to="/safety" className="nav-link-with-space" >
+              <Nav.Link as={Link} to="/safety" className="nav-link-with-space">
                 Safety
               </Nav.Link>
               <Nav.Link as={Link} to="/contact" className="nav-link-with-space">

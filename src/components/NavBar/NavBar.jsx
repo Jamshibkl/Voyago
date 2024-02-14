@@ -59,6 +59,13 @@ function NavBar() {
               >
                 Legal and Privacy
               </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/book-a-driver"
+                className="dropdown-items"
+              >
+                Book a Driver
+              </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/safety" className="nav-link-with-space">
               Safety

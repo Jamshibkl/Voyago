@@ -8,6 +8,7 @@ import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import Safety from "./pages/Safety/Safety";
 import ServiceStatus from "./pages/ServiceStatus/ServiceStatus";
 import LeagalPrivacy from "./pages/LeagalAandPrivacy/LeagalPrivacy";
+import BookADriver from "./components/Book-a-Driver/BookADriver"
 import ContactUs from "./pages/ContactUS/ContactUs";
 import SignInUp from "./components/Sign-in-up/SignInUp";
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/safety" element={<Safety />} />
           <Route path="/service-status" element={<ServiceStatus />} />
           <Route path="/leagal-privacy" element={<LeagalPrivacy />} />
+          <Route path="/book-a-driver" element={<BookADriver />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/sign-in" element={<SignInUp />} />
           <Route path="/sign-up" element={<SignInUp />} />

@@ -11,6 +11,7 @@
 .bookADriver .driver-container .driver-heading {
     font-size: 40px;
     margin: 15px 0 15px 0;
+    font-weight: bold;
     text-align: center;
     color: #407bff;
 }
@@ -22,7 +23,7 @@
     width: 100%;
     padding: 0;
     margin: 10px 0 10px 0;
-    color: rgb(95, 95, 95);
+    color: rgb(104, 104, 104);
 }
 
 .bookADriver .driver-container .driver-btn {

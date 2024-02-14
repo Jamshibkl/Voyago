@@ -11,6 +11,7 @@ import LeagalPrivacy from "./pages/LeagalAandPrivacy/LeagalPrivacy";
 import BookADriver from "./components/Book-a-Driver/BookADriver"
 import ContactUs from "./pages/ContactUS/ContactUs";
 import SignInUp from "./components/Sign-in-up/SignInUp";
+import Local from "./components/Booking-form/Local/Local"
 function App() {
   return (
     <div className="App">
@@ -26,7 +27,7 @@ function App() {
           <Route path="/book-a-driver" element={<BookADriver />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/sign-in" element={<SignInUp />} />
-          <Route path="/sign-up" element={<SignInUp />} />
+          <Route path="/sign-up" element={<Local />} />
         </Routes>
       </Router>
     </div>

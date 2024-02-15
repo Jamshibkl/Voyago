@@ -24,7 +24,7 @@ function DriverSelection() {
             <div className="driver_container">
                  <img src={DriverProfileImage} alt="" className='driver_profile'/>
                  <h4 className='driver_name'>Mahesh k</h4>
-                 <h4 className='driver_rate'>4.5/5  (31 jobs)</h4>
+                 <h4 className='driver_rate'>⭐4.5/5  (31 jobs)</h4>
                  <h4 className='driver_experience'>3 Years of Experience</h4>
                  <h4 className='driver_charge'>Hourly Charge : 200 ₹</h4>
                  <button className='button_choose'>Choose</button>
@@ -33,7 +33,7 @@ function DriverSelection() {
             <div className="driver_container">
                  <img src={DrverProfileImage2} alt="" className='driver_profile'/>
                  <h4 className='driver_name'>Hassan</h4>
-                 <h4 className='driver_rate'>4.3/5  (23 jobs)</h4>
+                 <h4 className='driver_rate'>⭐4.3/5  (23 jobs)</h4>
                  <h4 className='driver_experience'>2 Years of Experience</h4>
                  <h4 className='driver_charge'>Hourly Charge : 150 ₹</h4>
                  <button className='button_choose'>Choose</button>
@@ -42,7 +42,7 @@ function DriverSelection() {
             <div className="driver_container">
                  <img src={DrverProfileImage3} alt="" className='driver_profile'/>
                  <h4 className='driver_name'>Albin Jose</h4>
-                 <h4 className='driver_rate'>3.8/5  (12 jobs)</h4>
+                 <h4 className='driver_rate'>⭐3.8/5  (12 jobs)</h4>
                  <h4 className='driver_experience'>1 Years of Experience</h4>
                  <h4 className='driver_charge'>Hourly Charge : 100 ₹</h4>
                  <button className='button_choose'>Choose</button>
@@ -55,7 +55,7 @@ function DriverSelection() {
             <div className="driver_container">
                  <img src={DrverProfileImage4} alt="" className='driver_profile'/>
                  <h4 className='driver_name'>Naveen</h4>
-                 <h4 className='driver_rate'>3.5/5  (18 jobs)</h4>
+                 <h4 className='driver_rate'>⭐3.5/5  (18 jobs)</h4>
                  <h4 className='driver_experience'>2 Years of Experience</h4>
                  <h4 className='driver_charge'>Hourly Charge : 120 ₹</h4>
                  <button className='button_choose'>Choose</button>
@@ -64,7 +64,7 @@ function DriverSelection() {
             <div className="driver_container">
                  <img src={DrverProfileImage5} alt="" className='driver_profile'/>
                  <h4 className='driver_name'>Ranjith</h4>
-                 <h4 className='driver_rate'>3.2/5  (13 jobs)</h4>
+                 <h4 className='driver_rate'>⭐3.2/5  (13 jobs)</h4>
                  <h4 className='driver_experience'>1 Years of Experience</h4>
                  <h4 className='driver_charge'>Hourly Charge : 100 ₹</h4>
                  <button className='button_choose'>Choose</button>
@@ -73,7 +73,7 @@ function DriverSelection() {
             <div className="driver_container">
                  <img src={DrverProfileImage3} alt="" className='driver_profile'/>
                  <h4 className='driver_name'>Mohammed</h4>
-                 <h4 className='driver_rate'>4.2/5  (25 jobs)</h4>
+                 <h4 className='driver_rate'>⭐4.2/5  (25 jobs)</h4>
                  <h4 className='driver_experience'>3 Years of Experience</h4>
                  <h4 className='driver_charge'>Hourly Charge : 180 ₹</h4>
                  <button className='button_choose'>Choose</button>

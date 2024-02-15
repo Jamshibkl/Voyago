@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Outstation.css";
+import { Link } from "react-router-dom";
 // import NavBar from "../../NavBar/NavBar";
 
 function Outstation() {
@@ -294,7 +295,9 @@ function Outstation() {
               </div>
 
               <div className="field button">
+                <Link to='/driver-selection'>
                 <input type="submit" value="Submit" />
+                </Link>
               </div>
             </form>
           </section>

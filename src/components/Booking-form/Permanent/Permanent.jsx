@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Permanent.css";
+import { Link } from "react-router-dom";
 // import NavBar from "../../NavBar/NavBar";
 function Permanent() {
   const [pickupDate, setPickupDate] = useState("");
@@ -119,7 +120,9 @@ function Permanent() {
             </div>
 
             <div className="field button">
+              <Link to='/driver-selection'>
               <input type="submit" value="Submit" />
+              </Link>
             </div>
           </form>
         </section>

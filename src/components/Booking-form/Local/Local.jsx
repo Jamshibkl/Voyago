@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Local.css";
 // import NavBar from "../../NavBar/NavBar";
 function Local() {
@@ -121,7 +122,9 @@ function Local() {
             </div>
 
             <div className="field button">
+              <Link to='/driver-selection'>
               <input type="submit" value="Submit" />
+              </Link>
             </div>
           </form>
         </section>

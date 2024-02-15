@@ -14,6 +14,7 @@ import SignInUp from "./components/Sign-in-up/SignInUp";
 import Local from "./components/Booking-form/Local/Local"
 import Outstation from "./components/Booking-form/Outstation/Outstation";
 import Permanent from "./components/Booking-form/Permanent/Permanent";
+import DriverSelection from "./components/Booking-form/DriverSelection/DriverSelection";
 function App() {
   return (
     <div className="App">
@@ -33,6 +34,7 @@ function App() {
           <Route path="/local" element={<Local />} />
           <Route path="/outstation" element={<Outstation />} />
           <Route path="/permanent" element={<Permanent />} />
+          <Route path="/driver-selection" element={<DriverSelection />} />
         </Routes>
       </Router>
     </div>

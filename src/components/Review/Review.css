@@ -8,14 +8,7 @@
     text-align: center;
     padding: 0 80px;
   }
-  @media (max-width: 991px) {
-    .review {
-      max-width: 100%;
-      flex-wrap: wrap;
-      margin-top: 40px;
-      padding: 0 20px;
-    }
-  }
+
   .review-2 {
     border-radius: 16px;
     box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.25);
@@ -26,11 +19,7 @@
     flex-direction: column;
     padding: 0 24px 40px;
   }
-  @media (max-width: 991px) {
-    .review-2 {
-      padding: 0 20px;
-    }
-  }
+
   .review_img {
     object-fit: auto;
     object-position: center;
@@ -49,11 +38,7 @@
     margin-top: 14px;
     white-space: nowrap;
   }
-  @media (max-width: 991px) {
-    .review-3 {
-      white-space: initial;
-    }
-  }
+
   .review-4 {
     color: rgba(0, 0, 0, 0.5);
     font-family: Inter, sans-serif;
@@ -71,11 +56,7 @@
     flex-direction: column;
     padding: 0 24px 40px;
   }
-  @media (max-width: 991px) {
-    .review-5 {
-      padding: 0 20px;
-    }
-  }
+
   .review-6 {
     color: #000;
     font-family: Inter, sans-serif;
@@ -83,11 +64,7 @@
     margin-top: 14px;
     white-space: nowrap;
   }
-  @media (max-width: 991px) {
-    .review-6 {
-      white-space: initial;
-    }
-  }
+
   .review-7 {
     color: rgba(0, 0, 0, 0.5);
     font-family: Inter, sans-serif;
@@ -105,11 +82,7 @@
     flex-direction: column;
     padding: 0 24px 40px;
   }
-  @media (max-width: 991px) {
-    .review-8 {
-      padding: 0 20px;
-    }
-  }
+ 
   .review-9 {
     color: #000;
     font-family: Inter, sans-serif;
@@ -117,11 +90,7 @@
     margin-top: 14px;
     white-space: nowrap;
   }
-  @media (max-width: 991px) {
-    .review-9 {
-      white-space: initial;
-    }
-  }
+
   .review-10 {
     color: rgba(0, 0, 0, 0.5);
     font-family: Inter, sans-serif;
@@ -139,11 +108,7 @@
     flex-direction: column;
     padding: 0 24px 40px;
   }
-  @media (max-width: 991px) {
-    .review-11 {
-      padding: 0 20px;
-    }
-  }
+
   .review-12 {
     color: #000;
     font-family: Inter, sans-serif;
@@ -151,11 +116,7 @@
     margin-top: 14px;
     white-space: nowrap;
   }
-  @media (max-width: 991px) {
-    .review-12 {
-      white-space: initial;
-    }
-  }
+
   .review-13 {
     color: rgba(0, 0, 0, 0.5);
     font-family: Inter, sans-serif;
@@ -173,11 +134,7 @@
     flex-direction: column;
     padding: 0 24px 40px;
   }
-  @media (max-width: 991px) {
-    .review-14 {
-      padding: 0 20px;
-    }
-  }
+
   .review-15 {
     color: #000;
     font-family: Inter, sans-serif;
@@ -185,11 +142,7 @@
     margin-top: 14px;
     white-space: nowrap;
   }
-  @media (max-width: 991px) {
-    .review-15 {
-      white-space: initial;
-    }
-  }
+
   .review-16 {
     color: rgba(0, 0, 0, 0.5);
     font-family: Inter, sans-serif;
@@ -207,11 +160,7 @@
     flex-direction: column;
     padding: 0 24px 40px;
   }
-  @media (max-width: 991px) {
-    .review-17 {
-      padding: 0 20px;
-    }
-  }
+ 
   .review-18 {
     color: #000;
     font-family: Inter, sans-serif;

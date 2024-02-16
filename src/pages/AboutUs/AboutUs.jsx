@@ -18,7 +18,7 @@ function AboutUs() {
       <div className="aboutUs">
         <h1 className="heading">About Us</h1>
 
-        <p className="aboutPara">
+        <p className="about-Para">
           Welcome to Voyago, where every journey is an experience crafted with
           care and innovation. Our story begins with a passion for transforming
           the way people travel, inspired by a simple yet powerful idea – to

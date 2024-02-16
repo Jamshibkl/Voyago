@@ -58,7 +58,6 @@ function BookADriver() {
         </div>
       </div>
     </div>
-    <Footer />
     </>
   );
 }

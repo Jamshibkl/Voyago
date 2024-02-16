@@ -16,28 +16,31 @@ body {
     margin: auto 60px;
 }
 
-.aboutUs h1 {
+.aboutUs .heading {
+    margin: 70px 30px 40px;
     font-size: 45px;
     margin-bottom: 20px;
     color: black;
 }
 
-.aboutUs p {
+.aboutUs .about-Para {
+    margin: 10px 45px 40px;
+    width: 1200px !important;
     font-size: 20px;
     font-weight: 400;
     color: grey;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     width: 80%;
 }
 
 .aboutUs h4 {
-    margin-left: 15px;
+    margin-left: 30px;
     margin-bottom: 10px;
     color: rgb(0, 153, 255);
 }
 
 .ourStory hr {
-    margin: 10px 15px 50px 15px;
+    margin: 10px 30px 50px 30px;
 }
 
 .content {

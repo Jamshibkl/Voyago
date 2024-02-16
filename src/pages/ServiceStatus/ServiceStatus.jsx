@@ -3,7 +3,7 @@ import "./ServiceStatus.css";
 import MotherImg from "../../Assets/download.jpeg";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
-import CurrentService from '../../Assets/service current.svg'
+import CurrentService from "../../Assets/service current.svg";
 function ServiceStatus(props) {
   return (
     <>
@@ -33,11 +33,7 @@ function ServiceStatus(props) {
         <div className="service-9">
           <div className="service-10">
             <div className="service-11">Current Service Status</div>
-            <img
-              loading="lazy"
-              src={CurrentService}
-              className="img-2"
-            />
+            <img loading="lazy" src={CurrentService} className="img-2" />
           </div>
         </div>
         <div className="service-12">

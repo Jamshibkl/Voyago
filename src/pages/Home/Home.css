@@ -124,24 +124,25 @@ p {
 
 }
 
+.feature_content{
+  margin-bottom:50px;
+}
+
 .feature_heading {
   text-align: center;
   color: rgba(0, 0, 0, 0.64);
-  margin-top: 163px;
+  margin:30px 0;
   font-size: 40px;
   font-weight: 600;
 }
 
 .feature_sub_heading {
   text-align: center;
-  margin: 0;
+  margin: 20px 0;
   color: var(--blue);
-  margin-top: 74px;
   font: 800 58px Inter, sans-serif;
 }
-.feature_content{
-  margin-bottom: 150px;
-}
+
 .feature_content p{
   text-align: center;
   width: 100%;
@@ -149,7 +150,7 @@ p {
   padding: 0;
   color: rgba(0, 0, 0, 0.65);
   margin-top: 25px;
-  font: 400 26px Inter, sans-serif;
+  font: 400 25px Inter, sans-serif;
   width: 100%;
 }
 
@@ -187,5 +188,5 @@ p {
 
 .faq_container {
   width: 80%;
-  margin: 150px;
+  margin: 30px 150px;
 }

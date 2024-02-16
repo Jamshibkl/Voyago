@@ -6,18 +6,19 @@
 
 .inner-container {
     margin: 20px;
-    padding: 80px 100px 20px;
+    padding: 20px 100px 20px;
 }
 
 .inner-container h1{
-    font-size: 55px;
+    font-size: 32px;
+    font-weight: bold;
     margin: 0;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 .inner-container .para{
-    font-size: 25px;
-    padding: 8px 0 19px;
+    font-size: 18px;
+    padding: 8px 0 ;
     margin: 0;
     width: 100%;
     font-weight: 100;
@@ -26,8 +27,8 @@
 
 .sec-heading{
     font-weight: bold;
-    padding-top: 40px;
-    font-size: 35px;
+    padding-top: 10px;
+    font-size: 28px;
 }
 
 .therd-heading{

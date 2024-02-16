@@ -30,7 +30,7 @@ function App() {
           <Route path="/book-a-driver" element={<BookADriver />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/sign-in" element={<SignInUp />} />
-          <Route path="/sign-up" element={<Local />} />
+          <Route path="/sign-up" element={<SignInUp />} />
           <Route path="/local" element={<Local />} />
           <Route path="/outstation" element={<Outstation />} />
           <Route path="/permanent" element={<Permanent />} />

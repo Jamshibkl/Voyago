@@ -83,7 +83,6 @@ function DriverSelection() {
         </div>
 
     </div>
-    <Footer />
     </>
   )
 }

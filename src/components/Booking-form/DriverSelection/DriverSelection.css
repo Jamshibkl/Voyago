@@ -16,6 +16,7 @@ body{
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+    margin: 0;
     padding-top: 50px;
 }
 .driver_selection h3 {
@@ -33,12 +34,13 @@ body{
     text-align: center;
     color: var(--blue);
     font-weight: bold;
-    margin: 50px;
+    margin: 30px;
 }
 .driver_availability {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 20px 150px;
 }
 .driver_container {
     align-items: center;
@@ -46,7 +48,7 @@ body{
     width: 250px;
     height: auto;
     border-radius: 10px;
-    margin: 50px;
+    margin: 50px 20px;
     box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.25);
     border: 2px solid var(--blue);
 

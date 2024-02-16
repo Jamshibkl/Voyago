@@ -7,6 +7,7 @@
   font-weight: bold;
   padding-top: 20px;
   color: var(--blue);
+  margin: 0;
 }
 .payment_details {
   display: flex;

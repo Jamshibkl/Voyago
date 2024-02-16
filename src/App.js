@@ -15,6 +15,7 @@ import Local from "./components/Booking-form/Local/Local"
 import Outstation from "./components/Booking-form/Outstation/Outstation";
 import Permanent from "./components/Booking-form/Permanent/Permanent";
 import DriverSelection from "./components/Booking-form/DriverSelection/DriverSelection";
+import PaymentSection from "./components/Booking-form/PaymentSection/PaymentSection";
 function App() {
   return (
     <div className="App">
@@ -35,6 +36,7 @@ function App() {
           <Route path="/outstation" element={<Outstation />} />
           <Route path="/permanent" element={<Permanent />} />
           <Route path="/driver-selection" element={<DriverSelection />} />
+          <Route path="/payment-section" element={<PaymentSection />} />
         </Routes>
       </Router>
     </div>

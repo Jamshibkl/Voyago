@@ -85,7 +85,8 @@ function FAQ() {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          padding: 24px;
+          padding: 15px;
+          margin:10px 0;
         }
         @media (max-width: 991px) {
           .faq-2 {
@@ -123,7 +124,8 @@ function FAQ() {
           margin-top: 24px;
           flex-direction: column;
           justify-content: center;
-          padding: 24px;
+          padding: 15px;
+          margin:10px 0;
         }
         @media (max-width: 991px) {
           .faq-5 {
@@ -161,7 +163,8 @@ function FAQ() {
           margin-top: 24px;
           flex-direction: column;
           justify-content: center;
-          padding: 24px;
+          padding: 15px;
+          margin:10px 0;
         }
         @media (max-width: 991px) {
           .faq-8 {
@@ -193,7 +196,8 @@ function FAQ() {
           margin-top: 24px;
           flex-direction: column;
           justify-content: center;
-          padding: 24px;
+          padding: 15px;
+          margin:10px 0;
         }
         @media (max-width: 991px) {
           .faq-11 {
@@ -231,7 +235,8 @@ function FAQ() {
           margin-top: 24px;
           flex-direction: column;
           justify-content: center;
-          padding: 24px;
+          padding: 15px;
+          margin:10px 0;
         }
         @media (max-width: 991px) {
           .faq-14 {
@@ -263,7 +268,8 @@ function FAQ() {
           margin-top: 24px;
           flex-direction: column;
           justify-content: center;
-          padding: 24px;
+          padding: 15px;
+          margin:10px 0;
         }
         @media (max-width: 991px) {
           .faq-17 {

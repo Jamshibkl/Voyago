@@ -47,6 +47,13 @@ function NavBar() {
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
+                to="/become-a-driver"
+                className="dropdown-items"
+              >
+                Become a Driver
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
                 to="/service-status"
                 className="dropdown-items"
               >

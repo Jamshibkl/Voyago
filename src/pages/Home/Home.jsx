@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import CarAnimate from "../../Assets/Car driving-rafiki (2).svg";
 import Feature from "../../components/Features/Feature";
 import HomeBanner from "../../components/banner/HomeBanner";
@@ -17,13 +17,13 @@ function Home() {
       {/* <NavBar/> */}
       <Navbar collapseOnSelect expand="lg" className="" id="nav-bar-section">
         <Container className="nav_container">
-          <Navbar.Brand className="logo" as={Link} to="/">
+          <Navbar.Brand className="logo" as={NavLink} to="/">
             VOYAGO
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto nav_links">
-              <Nav.Link as={Link} to="/" className="nav-link-with-space">
+              <Nav.Link as={NavLink} to="/" className="nav-link-with-space">
                 Home
               </Nav.Link>
               <NavDropdown
@@ -32,73 +32,73 @@ function Home() {
                 className="dropdown-btn"
               >
                 <NavDropdown.Item
-                  as={Link}
+                  as={NavLink}
                   to="/about-us"
                   className="dropdown-items"
                 >
                   About us
                 </NavDropdown.Item>
                 <NavDropdown.Item
-                  as={Link}
+                  as={NavLink}
                   to="/how-it-works"
                   className="dropdown-items"
                 >
                   How it Works
                 </NavDropdown.Item>
                 <NavDropdown.Item
-                  as={Link}
+                  as={NavLink}
                   to="/our-team"
                   className="dropdown-items"
                 >
                   Our Team
                 </NavDropdown.Item>
                 <NavDropdown.Item
-                as={Link}
+                as={NavLink}
                 to="/become-a-driver"
                 className="dropdown-items"
               >
                 Become a Driver
               </NavDropdown.Item>
                 <NavDropdown.Item
-                  as={Link}
+                  as={NavLink}
                   to="/service-status"
                   className="dropdown-items"
                 >
                   Service Status
                 </NavDropdown.Item>
                 <NavDropdown.Item
-                  as={Link}
+                  as={NavLink}
                   to="/legal"
                   className="dropdown-items"
                 >
                   Legal and Privacy
                 </NavDropdown.Item>
                 <NavDropdown.Item
-                  as={Link}
+                  as={NavLink}
                   to="/book-a-driver"
                   className="dropdown-items"
                 >
                   Book a Driver
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link as={Link} to="/safety" className="nav-link-with-space">
+              <Nav.Link as={NavLink} to="/safety" className="nav-link-with-space">
                 Safety
               </Nav.Link>
-              <Nav.Link as={Link} to="/contact" className="nav-link-with-space">
+              <Nav.Link as={NavLink} to="/contact" className="nav-link-with-space">
                 Contact
               </Nav.Link>
             </Nav>
 
             <Nav className="ms-auto">
               <Nav.Link
-                as={Link}
+                as={NavLink}
                 to="/sign-in"
                 className="nav-link-with-space text-light"
               >
                 Login
               </Nav.Link>
               <Nav.Link
-                as={Link}
+                as={NavLink}
                 to="/sign-up"
                 eventKey={2}
                 className="signup-btn text-light border-light"
@@ -125,9 +125,9 @@ function Home() {
             Voyago transforms the way you travel. Bringing skillful drivers to
             your doorstep, we make owning a car a pleasure.
           </p>
-          <Link to='/book-a-driver'>
+          <NavLink to='/book-a-driver'>
           <button className="main_btn">Book a Driver</button>
-          </Link>
+          </NavLink>
         </div>
         <div className="main-right">
           <div className="main_container">

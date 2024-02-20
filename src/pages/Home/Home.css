@@ -86,7 +86,7 @@ p {
   margin-top: 70px;
 }
 
-p {
+.main_left p {
   font-size: 20px;
   width: 380px;
 }
@@ -96,7 +96,7 @@ p {
   height: 65px;
   background: var(--blue);
   color: var(--white);
-  border-radius: 30px;
+  border-radius: 20px;
   font-size: 25px;
   border: none;
   font-weight: bold;

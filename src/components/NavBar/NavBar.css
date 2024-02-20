@@ -56,7 +56,17 @@ box-shadow: 10px 10px 34px -27px rgba(0,0,0,0.75)
     font-weight: bold;
 }
 
-.dropdown-items:hover{
+/* .dropdown-items:hover{
     background-color: var(--blue);
     color: var(--white);
+} */
+
+.dropdown-items:active{
+    background-color: #fff;
+    color: #407BFF;
+}
+
+.navbar-nav .active{
+   color: var(--blue) !important;
+   background-color: var(--white) !important;
 }

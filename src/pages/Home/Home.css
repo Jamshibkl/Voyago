@@ -60,6 +60,17 @@ body {
   font-weight: bold;
 }
 
+
+.dropdown-items:active{
+  background-color: #fff;
+  color: #407BFF;
+}
+
+.navbar-nav .active{
+ color: var(--blue) !important;
+ background-color: var(--white) !important;
+}
+
 /* main section */
 .main_section {
   width: 100%;

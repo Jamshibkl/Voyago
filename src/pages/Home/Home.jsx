@@ -61,9 +61,16 @@ function Home() {
               </NavDropdown.Item>
                 <NavDropdown.Item
                   as={NavLink}
-                  to="/service-status"
+                  to="/admin"
                   className="dropdown-items"
                 >
+                   Admin
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={NavLink}
+                to="/service-status"
+                className="dropdown-items"
+              >
                   Service Status
                 </NavDropdown.Item>
                 <NavDropdown.Item

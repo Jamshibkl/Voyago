@@ -1,7 +1,7 @@
 import React from "react";
 import "./PaymentSection.css";
 import NavBar from "../../NavBar/NavBar";
-import PaymentBro from "../../../Assets/Payment Information-rafiki.svg";
+// import PaymentBro from "../../../Assets/Payment Information-rafiki.svg";
 import DriverImage from "../../../Assets/driver_profile-5.jpg";
 import PaymentSucsessIcon from "../../../Assets/payment-sucssesfull.png";
 function PaymentSection() {

@@ -54,6 +54,13 @@ function NavBar() {
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={NavLink}
+                to="/admin"
+                className="dropdown-items"
+              >
+                Admin
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={NavLink}
                 to="/service-status"
                 className="dropdown-items"
               >

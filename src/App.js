@@ -17,6 +17,7 @@ import PaymentSection from "./components/Book-a-Driver/PaymentSection/PaymentSec
 import DriverConform from "./components/Book-a-Driver/Driver-conformed/DriverConform";
 import ContactUs from "./pages/ContactUS/ContactUs";
 import SignInUp from "./components/Sign-in-up/SignInUp";
+import Admin from "./Admin/Admin";
 function App() {
   return (
     <div className="App">
@@ -38,6 +39,7 @@ function App() {
           <Route path="/on-the-way" element={<OnTheWay />} />
           <Route path="/destination" element={<Destination />} />
           <Route path="/payment-section" element={<PaymentSection />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </Router>
     </div>

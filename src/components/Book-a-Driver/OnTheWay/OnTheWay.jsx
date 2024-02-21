@@ -16,7 +16,6 @@ function OnTheWay() {
           </div>
           <img src={DriverOnWayImg} alt="" />
         </div>
-        <hr />
         <div className="facing-diff">
           <h3>Facing any difficulties? Feel free to contact!</h3>
           <Link to="/destination">

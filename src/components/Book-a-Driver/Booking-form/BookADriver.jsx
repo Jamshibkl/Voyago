@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./BookADriver.css";
-import BookingImage from "../../../Assets/Study abroad-rafiki.svg";
+import BookingImage from "../../../Assets/travel-ilustra.jpg";
 import NavBar from "../../../components/NavBar/NavBar";
 
 // import Footer from '../../components/Footer/Footer'

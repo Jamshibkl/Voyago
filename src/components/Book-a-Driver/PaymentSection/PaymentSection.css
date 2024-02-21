@@ -6,6 +6,9 @@ body {
 .payment-section {
   display: flex;
   justify-content: space-evenly;
+  background-color: #e5e5f7;
+  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 10px 10px;
 }
 .payment-details {
   padding: 50px;
@@ -14,17 +17,26 @@ body {
   margin: 0;
   font-size: 40;
   font-weight: bold;
-  color: var(--blue);
+  color: #444cf7;
   padding: 0px 0px 20px 0px;
 }
 .payment-sucsess {
   width: 40px;
   height: 40px;
 }
+.payment-section form {
+  background: #ffffff;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  width: 500px;
+  padding: 20px;
+}
 .payment-details form input[type="text"] {
   padding: 20px 0px;
   border-bottom-style: solid;
-  border-bottom-color: black;
+  border-bottom-color: var(--blue);
+  box-shadow: 0px 16px 24px -2px #407cff15;
   border-top-color: transparent;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -38,15 +50,16 @@ body {
   border: none;
 }
 .payment-details input::placeholder {
-  color: rgb(78, 126, 189);
+  color: #011440;
   font-weight: bold;
   font-size: 15px;
 }
 .payment-details h2 {
   font-size: 30px;
   font-weight: bold;
-  color: var(--blue);
-  padding: 30px 0px 30px 0px;
+  color: #171923;
+  padding: 20px 0px 20px 0px;
+  margin: 0;
 }
 .driver-info-container {
   display: flex;
@@ -56,11 +69,18 @@ body {
   width: 500px;
   height: 250px;
   text-align: center;
-  background: rgb(228, 228, 228);
+  background: rgb(1, 33, 81);
+  background: linear-gradient(
+    138deg,
+    rgba(1, 33, 81, 1) 0%,
+    rgba(68, 75, 247, 1) 100%
+  );
+  box-shadow: 0px 16px 24px -2px #407cff9f;
+  color: #ffffff;
 }
 .driver-info-container h3 {
   margin: 0;
-  color: var(--blue);
+  color: #ffffff;
   font-weight: bold;
   padding: 10px;
 }
@@ -75,35 +95,36 @@ body {
 .payment-feedback h3 {
   font-size: 30px;
   font-weight: bold;
-  color: var(--blue);
+  color: #171923;
   padding: 50px 0px 0px 0px;
 }
 .payment-feedback input[type="textarea"] {
   width: 100%;
   height: 300px;
-  padding: 12px 20px;
-  -webkit-box-shadow: -4px -1px 29px -7px rgb(227, 209, 227);
-  -moz-box-shadow: -4px -1px 29px -7px rgb(172, 170, 172);
-  box-shadow: -4px -1px 29px -7px rgb(149, 146, 149);
+  padding: 0px 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
   border-radius: 20px;
   border: none;
   background-color: #ffffff;
   font-size: 16px;
   resize: none;
+  text-align: top;
 }
 .payment-feedback h4 {
   font-size: 25px;
   font-weight: bold;
-  color: var(--blue);
+  color: #171923;
   padding: 20px 0px 0px 0px;
 }
 .feedback-submit {
   padding: 15px;
-  background: var(--blue);
-  border: none;
+  background: #444bf7;
+  color: #ffffff;
+  border: 2px solid #444bf7;
   border-radius: 10px;
   margin-top: 20px;
-  color: white;
+  box-shadow: 0px 16px 24px -2px #407cff9f;
 }
 .payment-bro {
   width: 500px;

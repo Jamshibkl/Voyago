@@ -60,12 +60,6 @@ body {
   font-weight: bold;
 }
 
-
-.dropdown-items:active{
-  background-color: #fff;
-  color: #407BFF;
-}
-
 .navbar-nav .active{
  color: var(--blue) !important;
  background-color: var(--white) !important;
@@ -173,14 +167,6 @@ p {
   margin-top: 81px;
   font: 800 40px Inter, sans-serif;
 }
-
-@media (max-width: 991px) {
-  .feedback_heading {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-}
-
 /* FAQ section */
 .Faq_heading {
   color: var(--blue);
@@ -188,13 +174,6 @@ p {
   align-self: center;
   margin-top: 81px;
   font: 800 40px Inter, sans-serif;
-}
-
-@media (max-width: 991px) {
-  .Faq_heading {
-    max-width: 100%;
-    margin-top: 40px;
-  }
 }
 
 .faq_container {

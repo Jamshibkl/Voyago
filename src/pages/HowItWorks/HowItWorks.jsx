@@ -125,7 +125,7 @@ function HowItWorks() {
             <div className="for_rectangle_div"></div>
             <div className="for_vertical_line"></div>
           </div>
-          <img src={RevenewBro} alt="" className="for_driver_img" />
+          <img src={JoinCommunityImg} alt="" className="for_driver_img" />
         </div>
         <div className="for_driver_working">
           <div className="for_driver_steps">
@@ -141,7 +141,7 @@ function HowItWorks() {
             <div className="for_rectangle_div"></div>
             <div className="for_vertical_line"></div>
           </div>
-          <img src={JoinCommunityImg} alt="" className="for_driver_img" />
+          <img src={ConformImg} alt="" className="for_driver_img" />
         </div>
         <div className="for_driver_working">
           <div className="for_driver_steps">
@@ -157,7 +157,7 @@ function HowItWorks() {
             <div className="for_rectangle_div"></div>
             <div className="for_vertical_line"></div>
           </div>
-          <img src={ConformImg} alt="" className="for_driver_img" />
+          <img src={NavigateImg} alt="" className="for_driver_img" />
         </div>
         <div className="for_driver_working">
           <div className="for_driver_steps">
@@ -173,7 +173,7 @@ function HowItWorks() {
             <div className="for_rectangle_div"></div>
             <div className="for_vertical_line"></div>
           </div>
-          <img src={NavigateImg} alt="" className="for_driver_img" />
+          <img src={RevenewBro} alt="" className="for_driver_img" />
         </div>
         <div className="for_driver_working">
           <div className="for_driver_steps">

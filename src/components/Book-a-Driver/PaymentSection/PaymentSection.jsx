@@ -33,9 +33,9 @@ function PaymentSection() {
             </div>
           </div>
         </div>
-       <div className="payment-feedback">
-       <h3>Give a feedback about the driver.</h3>
-        <br />
+        <div className="payment-feedback">
+          <h3>Give a feedback about the driver.</h3>
+          <br />
           <input type="textarea" />
           <h4>Add Star Rating : </h4>
           <span class="fa fa-star checked"></span>
@@ -45,7 +45,7 @@ function PaymentSection() {
           <span class="fa fa-star"></span>
           <br />
           <button className="feedback-submit">Submit</button>
-       </div>
+        </div>
       </div>
     </>
   );

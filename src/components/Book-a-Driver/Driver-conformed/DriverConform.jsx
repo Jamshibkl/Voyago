@@ -8,10 +8,11 @@ function DriverConform() {
     <>
       <NavBar />
       <div className="confirme-section">
-        <div className="conform-headings">
+        <div className="driver-conform-headings">
           <h1>Your driver Arrived at Your Pickup Location!</h1>
-          <h1>Use below PIN to confirm the driver.</h1>
-          <h2>270432</h2>
+          <h2>Use below PIN to confirm the driver.</h2>
+          <span>270432</span>
+          <br />
           <Link to="/on-the-way">
             <button className="confirme-driver-btn">CONFIRM DRIVER</button>
           </Link>
@@ -31,7 +32,7 @@ function DriverConform() {
           <p>Drivers ID : AS36GDD45</p>
         </div>
       </div>
-      <hr />
+
       <div className="cancel_section">
         <p>
           Please note that repeated cancellations can disrupt our operations and

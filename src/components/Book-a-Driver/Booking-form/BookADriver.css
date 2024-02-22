@@ -19,6 +19,7 @@ body {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   border-radius: 20px;
+  margin-left: 10px;
 }
 .booking-form h1 {
   padding: 50px 20px;
@@ -28,7 +29,7 @@ body {
   margin: 0;
 }
 .booking-form input {
-  padding: 20px 0px;
+  padding: 20px 0px 20px 40px;
   margin: 20px;
   border: none;
   border-radius: 10px;
@@ -37,32 +38,34 @@ body {
   font-size: 20px;
   font-weight: 600;
 }
-.booking-form input:hover {
-  border: 2px solid black;
+.input-with-icon {
+  position: relative;
+  display: inline;
+}
+
+.booking-input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 35px;
 }
 .booking-form input::placeholder {
-  color: #011440bb;
+  color: #0114409d;
   font-weight: bold;
   font-size: 20px;
-  text-align: center;
 }
 
 .booking-form select {
   margin: 20px 0px 20px 20px;
-  padding: 20px 0px;
+  padding: 20px 0px 20px 40px;
   font-size: 20px;
   border: none;
   border-radius: 10px;
   background: rgb(230, 230, 230);
-  width: 250px;
+  width: 290px;
   font-weight: bold;
-  color: #011440bb;
-  text-align: center;
+  color: #0114409d;
 }
-.booking-form select:hover {
-  border: 2px solid black;
-}
-
 .booking-btn {
   padding: 15px;
   text-align: center;

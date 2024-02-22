@@ -13,13 +13,15 @@ function Destination() {
           <h1>Reached your destination!</h1>
           <h2>Please pay the fare amount.</h2>
           <form action="">
-           <div className="destination-details">
-           <input type="text" placeholder="From : mumbai" readOnly />
-            <input type="text" placeholder="To : delhi" readOnly />
-            <br />
-            <input type="text" placeholder="Distance: 30km" readOnly />
-           </div>
-            <h3>Total Charge : 450</h3>
+            <div className="destination-details">
+              <input type="text" placeholder="From : mumbai" readOnly />
+              <input type="text" placeholder="To : delhi" readOnly />
+              <br />
+              <input type="text" placeholder="Distance: 30km" readOnly />
+            </div>
+            <h3>
+              Total Charge : <span>450</span>
+            </h3>
             <label>
               <input type="radio" name="paymentMethod" /> Online Payment
             </label>

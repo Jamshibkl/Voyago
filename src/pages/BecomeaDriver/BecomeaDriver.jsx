@@ -2,7 +2,11 @@ import React from "react";
 import "./BecomeaDriver.css";
 import Cover_pic from "../../Assets/driver-cover-pic.jpg";
 import Footer from "../../components/Footer/Footer";
-
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
 function BecomeaDriver() {
   return (
     <div className="become-a-driver">
@@ -25,18 +29,22 @@ function BecomeaDriver() {
       </div>
       <div className="sing-up-in">
         <div className="driver-sing-up-in">
-          <div className="driver-sing-up">
+        <Link to='/driver-signup' style={{textDecoration: 'none'}}>
+          <div className="driver-sing-up">  
             <h2>Sign up now </h2>
-            <button className="sing-up-btn">--</button>
+            <button className="sing-up-btn"><FontAwesomeIcon icon={faArrowRight} /></button>
           </div>
+          </Link>
           <hr />
         </div>
 
         <div className="driver-sing-up-in">
+        <Link to='/driver-login' style={{textDecoration: 'none'}}>
           <div className="driver-sing-in">
             <h2>Login</h2>
-            <button className="sing-in-btn">--</button>
+            <button className="sing-in-btn"><FontAwesomeIcon icon={faArrowRight} /></button>
           </div>
+          </Link>
           <hr />
         </div>
       </div>

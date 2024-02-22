@@ -150,6 +150,7 @@
     font-weight: bold;
     margin: 0;
     padding: 0;
+    color: black;
 }
 
 .driver-sing-up .sing-up-btn {
@@ -157,6 +158,7 @@
     font-size: 40px;
     background-color: #fff;
     cursor: pointer;
+    
 }
 
 .driver-sing-in h2 {
@@ -164,6 +166,8 @@
     font-weight: bold;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: black;
 }
 
 .driver-sing-in .sing-in-btn {

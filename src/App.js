@@ -15,8 +15,14 @@ import Destination from "./components/Book-a-Driver/Destination/Destination";
 import OnTheWay from "./components/Book-a-Driver/OnTheWay/OnTheWay";
 import PaymentSection from "./components/Book-a-Driver/PaymentSection/PaymentSection";
 import DriverConform from "./components/Book-a-Driver/Driver-conformed/DriverConform";
+import DriverLoginOtp from "./components/Driver/DriverLogin/DriverLoginOtp/DriverLoginOtp";
 import ContactUs from "./pages/ContactUS/ContactUs";
 import SignInUp from "./components/Sign-in-up/SignInUp";
+import DriverLogin from "./components/Driver/DriverLogin/DriverLogin";
+import DriverRegisterOtp from "./components/Driver/DriverRegister/DriverRegisterOtp/DriverRegisterOtp";
+import DriverRegister from "./components/Driver/DriverRegister/DriverRegister";
+import DriverVerify from "./components/Driver/DriverVerify/DriverVerify";
+import DriverRelax from "./components/Driver/DriverRelax/DriverRelax";
 import Admin from "./Admin/Admin";
 function App() {
   return (
@@ -40,6 +46,12 @@ function App() {
           <Route path="/destination" element={<Destination />} />
           <Route path="/payment-section" element={<PaymentSection />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/driver-login" element={<DriverLogin />} />
+          <Route path="/driver-login-otp" element={<DriverLoginOtp />} />
+          <Route path="/driver-signup" element={<DriverRegister />} />
+          <Route path="/driver-signup-otp" element={<DriverRegisterOtp />} />
+          <Route path="/driver-verify" element={<DriverVerify />} />
+          <Route path="/driver-relax" element={<DriverRelax />} />
         </Routes>
       </Router>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
+import { NavLink } from "react-router-dom";
 
 function Dashboard() {
   return (
@@ -31,34 +32,44 @@ function Dashboard() {
               {/* icons */}
               <h5>Dashboard</h5>
             </div>
-            <div className="dashboard-head">
-              {/* icons */}
-              <h5>Dashboard</h5>
-            </div>
+
+            <NavLink to="/admin-dashboard">
+              <div className="dashboard-head">
+                {/* icons */}
+                <h5>Dashboard</h5>
+              </div>
+            </NavLink>
 
             <div className="dashboard-span">
               <span>Client Facing</span>
             </div>
+            <NavLink to='/drivers'>
+              <div className="dashboard-items">
+                {/* icons */}
+                <h5>Drivers</h5>
+              </div>
+            </NavLink>
+            <NavLink to="/customers">
+              <div className="dashboard-items">
+                {/* icons */}
+                <h5> Customers</h5>
+              </div>
+            </NavLink>
 
-            <div className="dashboard-items">
-              {/* icons */}
-              <h5>Drivers</h5>
-            </div>
+            <NavLink to="/transactions">
+              <div className="dashboard-items">
+                {/* icons */}
+                <h5>Transactions</h5>
+              </div>
+            </NavLink>
 
-            <div className="dashboard-items">
-              {/* icons */}
-              <h5> Customers</h5>
-            </div>
-
-            <div className="dashboard-items">
-              {/* icons */}
-              <h5>Transactions</h5>
-            </div>
-
-            <div className="dashboard-items">
-              {/* icons */}
-              <h5>Total Drivers</h5>
-            </div>
+            <NavLink to="/total-drivers">
+              {" "}
+              <div className="dashboard-items">
+                {/* icons */}
+                <h5>Total Drivers</h5>
+              </div>
+            </NavLink>
 
             <div className="dashboard-span">
               <span>Sales</span>

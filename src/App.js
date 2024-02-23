@@ -24,6 +24,11 @@ import DriverRegister from "./components/Driver/DriverRegister/DriverRegister";
 import DriverVerify from "./components/Driver/DriverVerify/DriverVerify";
 import DriverRelax from "./components/Driver/DriverRelax/DriverRelax";
 import Admin from "./Admin/Admin";
+import Dashboard from "./Admin/Components/Dashboard/Dashboard";
+import Drivers from "./Admin/Components/Drivers/Drivers";
+import Customers from "./Admin/Components/Customers/Customers";
+import Transactions from "./Admin/Components/Transactions/Transactions";
+import TotalDrivers from "./Admin/Components/Total-Drivers/TotalDrivers";
 function App() {
   return (
     <div className="App">
@@ -52,6 +57,12 @@ function App() {
           <Route path="/driver-signup-otp" element={<DriverRegisterOtp />} />
           <Route path="/driver-verify" element={<DriverVerify />} />
           <Route path="/driver-relax" element={<DriverRelax />} />
+
+          <Route path="/admin-dashboard" element={<Dashboard />} />
+          <Route path="/drivers" element={<Drivers />} />
+          <Route path="/customers" element={<Customers />} />
+          <Route path="/transactions" element={<Transactions />} />
+          <Route path="/total-drivers" element={<TotalDrivers />} />
         </Routes>
       </Router>
     </div>

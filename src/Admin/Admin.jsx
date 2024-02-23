@@ -1,5 +1,6 @@
 import React from "react";
 import "./Admin.css";
+import Navbar from "./admin-navbar/Navbar";
 
 function Admin() {
   return (
@@ -11,6 +12,26 @@ function Admin() {
 
         <div className="dashboard-section">
           <div className="dashboard-options">
+            <div className="dashboard-head">
+              {/* icons */}
+              <h5>Dashboard</h5>
+            </div>
+            <div className="dashboard-head">
+              {/* icons */}
+              <h5>Dashboard</h5>
+            </div>
+            <div className="dashboard-head">
+              {/* icons */}
+              <h5>Dashboard</h5>
+            </div>
+            <div className="dashboard-head">
+              {/* icons */}
+              <h5>Dashboard</h5>
+            </div>
+            <div className="dashboard-head">
+              {/* icons */}
+              <h5>Dashboard</h5>
+            </div>
             <div className="dashboard-head">
               {/* icons */}
               <h5>Dashboard</h5>
@@ -96,6 +117,7 @@ function Admin() {
       </div>
 
       <div className="admin-Content">
+        <Navbar />
       </div>
     </div>
   );

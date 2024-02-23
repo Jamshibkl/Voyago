@@ -1,9 +1,9 @@
-import React from "react";
-import "./TotalDrivers.css"
+import React from 'react'
+import "./TotalAdmins.css"
 import Sidebar from "../Sidebar/Sidebar";
 import Navbar from "../admin-navbar/Navbar";
 
-function TotalDrivers() {
+function TotalAdmins() {
   return (
     <div className="admin-Dashboard">
       <div className="admin-SideBar">
@@ -12,22 +12,22 @@ function TotalDrivers() {
 
       <div className="admin-Content">
         <Navbar />
-        <div className="dashboard-driver-info">
-          <div className="dashboard-driver">
+        <div className="dashboard-admin-info">
+          <div className="dashboard-admin">
             <h2>Total Drivers</h2>
-            <div className="driver-table">
+            <div className="admin-table">
               <table>
                 <tr>
                   <th>Name</th>
                   <th>Mobile</th>
                   <th>email</th>
-                  <th>joined on</th>
+                  <th>Password</th>
                 </tr>
                 <tr className="table-data">
                   <td>john</td>
                   <td>7894561230</td>
                   <td>abc@gmail.com</td>
-                  <td>12-1-2024</td>
+                  <td>12334rewq</td>
                 </tr>
               </table>
             </div>
@@ -35,7 +35,7 @@ function TotalDrivers() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default TotalDrivers;
+export default TotalAdmins

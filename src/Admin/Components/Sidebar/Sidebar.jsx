@@ -12,29 +12,8 @@ function Dashboard() {
 
         <div className="dashboard-section">
           <div className="dashboard-options">
-            <div className="dashboard-head">
-              {/* icons */}
-              <h5>Dashboard</h5>
-            </div>
-            <div className="dashboard-head">
-              {/* icons */}
-              <h5>Dashboard</h5>
-            </div>
-            <div className="dashboard-head">
-              {/* icons */}
-              <h5>Dashboard</h5>
-            </div>
-            <div className="dashboard-head">
-              {/* icons */}
-              <h5>Dashboard</h5>
-            </div>
-            <div className="dashboard-head">
-              {/* icons */}
-              <h5>Dashboard</h5>
-            </div>
-
             <NavLink to="/admin-dashboard">
-              <div className="dashboard-head">
+              <div className="dashboard-head dashboard-head1">
                 {/* icons */}
                 <h5>Dashboard</h5>
               </div>
@@ -43,7 +22,7 @@ function Dashboard() {
             <div className="dashboard-span">
               <span>Client Facing</span>
             </div>
-            <NavLink to='/drivers'>
+            <NavLink to="/drivers">
               <div className="dashboard-items">
                 {/* icons */}
                 <h5>Drivers</h5>
@@ -70,46 +49,25 @@ function Dashboard() {
                 <h5>Total Drivers</h5>
               </div>
             </NavLink>
-
+{/* 
             <div className="dashboard-span">
               <span>Sales</span>
             </div>
 
             <div className="dashboard-items">
-              {/* icons */}
-              <h5>Overview</h5>
-            </div>
-
-            <div className="dashboard-items">
-              {/* icons */}
-              <h5> Daily</h5>
-            </div>
-
-            <div className="dashboard-items">
-              {/* icons */}
+              
               <h5>Monthly</h5>
-            </div>
-
-            <div className="dashboard-items">
-              {/* icons */}
-              <h5>Breakdown</h5>
-            </div>
+            </div> */}
 
             <div className="dashboard-span">
               <span>Management</span>
             </div>
-
-            <div className="dashboard-items">
-              {/* icons */}
-              <h5>Admins</h5>
-            </div>
-
-            <div className="dashboard-items">
-              {/* icons */}
-              <h5>Performance</h5>
-            </div>
-
-            <hr />
+            <NavLink to="/total-admin">
+              <div className="dashboard-items">
+                {/* icons */}
+                <h5>Admins</h5>
+              </div>
+            </NavLink>
 
             <div className="profile-section">
               <div className="profile-content">

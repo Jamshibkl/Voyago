@@ -29,6 +29,7 @@ import Drivers from "./Admin/Components/Drivers/Drivers";
 import Customers from "./Admin/Components/Customers/Customers";
 import Transactions from "./Admin/Components/Transactions/Transactions";
 import TotalDrivers from "./Admin/Components/Total-Drivers/TotalDrivers";
+import TotalAdmin from "./Admin/Components/total-admins/TotalAdmins";
 function App() {
   return (
     <div className="App">
@@ -63,6 +64,7 @@ function App() {
           <Route path="/customers" element={<Customers />} />
           <Route path="/transactions" element={<Transactions />} />
           <Route path="/total-drivers" element={<TotalDrivers />} />
+          <Route path="/total-admin" element={<TotalAdmin />} />
         </Routes>
       </Router>
     </div>

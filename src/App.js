@@ -23,6 +23,11 @@ import DriverRegisterOtp from "./components/Driver/DriverRegister/DriverRegister
 import DriverRegister from "./components/Driver/DriverRegister/DriverRegister";
 import DriverVerify from "./components/Driver/DriverVerify/DriverVerify";
 import DriverRelax from "./components/Driver/DriverRelax/DriverRelax";
+import DriverDashboard from "./components/Driver/DriverDashboard/DriverDashboard";
+import DriverSideBar from "./components/Driver/DriverSideBar/DriverSideBar";
+import DriverProfile from "./components/Driver/DriverProfile/DriverProfile";
+import DriverNotification from "./components/Driver/DriverNotification/DriverNotification";
+import DriverRide from "./components/Driver/DriverRide/DriverRide";
 import Admin from "./Admin/Admin";
 function App() {
   return (
@@ -52,6 +57,11 @@ function App() {
           <Route path="/driver-signup-otp" element={<DriverRegisterOtp />} />
           <Route path="/driver-verify" element={<DriverVerify />} />
           <Route path="/driver-relax" element={<DriverRelax />} />
+          <Route path="/driver-side" element={<DriverSideBar />} />
+          <Route path="/driver-dashbord" element={<DriverDashboard />} />
+          <Route path="/driver-profile" element={<DriverProfile />} />
+          <Route path="/driver-notify" element={<DriverNotification />} />
+          <Route path="/driver-ride" element={<DriverRide />} />
         </Routes>
       </Router>
     </div>

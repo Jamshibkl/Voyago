@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
@@ -17,8 +17,8 @@ function DriverRelax() {
             <br />
             <span>forgot password?</span>
             <br />
-            <Link to='/driver-login-otp'>
-            <button>login</button>
+            <Link to="/driver-dashbord">
+              <button>login</button>
             </Link>
             <br />
             <button>
@@ -30,7 +30,7 @@ function DriverRelax() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default DriverRelax
+export default DriverRelax;

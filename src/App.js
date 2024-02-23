@@ -29,6 +29,12 @@ import DriverProfile from "./components/Driver/DriverProfile/DriverProfile";
 import DriverNotification from "./components/Driver/DriverNotification/DriverNotification";
 import DriverRide from "./components/Driver/DriverRide/DriverRide";
 import Admin from "./Admin/Admin";
+import Dashboard from "./Admin/Components/Dashboard/Dashboard";
+import Drivers from "./Admin/Components/Drivers/Drivers";
+import Customers from "./Admin/Components/Customers/Customers";
+import Transactions from "./Admin/Components/Transactions/Transactions";
+import TotalDrivers from "./Admin/Components/Total-Drivers/TotalDrivers";
+import TotalAdmin from "./Admin/Components/total-admins/TotalAdmins";
 function App() {
   return (
     <div className="App">
@@ -57,11 +63,6 @@ function App() {
           <Route path="/driver-signup-otp" element={<DriverRegisterOtp />} />
           <Route path="/driver-verify" element={<DriverVerify />} />
           <Route path="/driver-relax" element={<DriverRelax />} />
-          <Route path="/driver-side" element={<DriverSideBar />} />
-          <Route path="/driver-dashbord" element={<DriverDashboard />} />
-          <Route path="/driver-profile" element={<DriverProfile />} />
-          <Route path="/driver-notify" element={<DriverNotification />} />
-          <Route path="/driver-ride" element={<DriverRide />} />
         </Routes>
       </Router>
     </div>

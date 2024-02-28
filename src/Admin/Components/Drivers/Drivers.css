@@ -38,24 +38,31 @@
 table td{
     height: 45px;
     text-align: center;
+    background-color: #3362cc;
 
     
 }
 
 .table-data{
-    background-color:rgb(33, 41, 92) ;
+    background-color:#3362cc ;
     border-radius: 10px;
 }
 
 .request-btn{
     height: 45px;
-    display: flex;
+    display: inline;
     margin-left: 20px;
+    width: 200px;
+}
+
+.btn-td{
+    width: 250px;
 }
 
 .request-btn button{
-    margin: 0 20px;
+    margin: 0 5px;
     width: 100px;
+    height: 37px;
     border-radius: 50px;
     font-weight: bold;
     border: none;

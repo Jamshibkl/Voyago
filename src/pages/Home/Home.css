@@ -107,6 +107,23 @@ p {
   font-weight: bold;
   margin-top: 10px;
 }
+.main_btn:hover {
+  width: 250px;
+  height: 65px;
+  background: hsla(221, 100%, 63%, 0.98);
+  color: var(--white);
+  border-radius: 20px;
+  font-size: 26px;
+  border: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.main_btn:active{
+  background: hsla(221, 100%, 63%, 0.7);
+}
+
+
 
 .main_container {
   background: var(--blue);

@@ -1,219 +1,206 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@200;300;400;500;600;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+.driver-reg-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  height: 500px;
+  background: #f7f7f7;
 }
 
-.main-container-sign{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 585px;
-    background-color: #c9d6ff;
-    background: linear-gradient(to right,  #407cff1c, #c9d6ffa3);
+header {
+  text-align: center;
 }
 
-.container1{
-    background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    position: relative;
-    overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
+.wrapper2 {
+  background: #fff;
+  width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
 }
 
-.container1 p{
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.3px;
-    margin: 20px 0;
+/* Singup Form Css Code */
+.form3 {
+  padding: 25px 30px;
+}
+.form3 header {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  color: var(--blue);
 }
 
-.container1 span{
-    font-size: 12px;
+.form3 .form {
+  margin: 20px 0;
+}
+.form3 .form {
+  /* margin: 20px 0; */
+  margin: 0;
 }
 
-.container1 a{
-    color: #333;
-    font-size: 13px;
-    text-decoration: none;
-    margin: 15px 0 10px;
+.form3 .form .error-txt {
+  color: #721c24;
+  background: #f8d7da;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #f5c6cb;
 }
 
-.container1 button{
-    background-color:  #407BFF;
-    color: #fff;
-    font-size: 12px;
-    padding: 10px 45px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    cursor: pointer;
+.form3 .form .success-msg {
+  color: #00ff26;
+  background: #f4fdf8;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #00ff55;
 }
 
-.container1 button.hidden{
-    background-color: transparent;
-    border-color: #fff;
+.form3 .form .name-details {
+  display: flex;
+}
+.form .name-details .field:first-child {
+  margin-right: 10px;
+}
+.form .name-details .field:last-child {
+  margin-left: 10px;
+}
+.form3 .form .field {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form3 .form .field label {
+  margin-bottom: 10px;
+}
+.form3 .form .field input {
+  outline: none;
 }
 
-.container1 form{
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    height: 100%;
+.form3 .form .input input {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
 }
 
-.container1 input{
-    background-color: #eee;
-    border: none;
-    margin: 8px 0;
-    padding: 10px 15px;
-    font-size: 13px;
-    border-radius: 8px;
-    width: 100%;
-    outline: none;
+.form3 .form .image input {
+  font-size: 17px;
 }
 
-.form-container{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    transition: all 0.6s ease-in-out;
+.form3 .form .button input {
+  margin-top: 13px;
+  height: 45px;
+  border: none;
+  font-size: 17px;
+  font-weight: 400;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form3 .form .field .icon {
+  position: absolute;
+  right: 15px;
+  color: #ccc;
+  top: 70%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
-.sign-in{
-    left: 0;
-    width: 50%;
-    z-index: 2;
+.form3 .link {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 17px;
 }
 
-.container1.active .sign-in{
-    transform: translateX(100%);
+.form3 .link a {
+  color: #333;
+}
+.form3 .link a:hover {
+  text-decoration: underline;
 }
 
-.sign-up{
-    left: 0;
-    width: 50%;
-    opacity: 0;
-    z-index: 1;
+/* users area css code */
+
+.driver-reg-form .users {
+  padding: 25px 30px;
+}
+.driver-reg-form .users header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+}
+.driver-reg-form .wrapper2 img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+.driver-reg-form .users header .content {
+  display: flex;
+}
+.driver-reg-form .users header .content img {
+  height: 50px;
+  width: 50px;
+}
+.driver-reg-form .users header .details {
+  margin-left: 15px;
 }
 
-.container1.active .sign-up{
-    transform: translateX(100%);
-    opacity: 1;
-    z-index: 5;
-    animation: move 0.6s;
+.driver-reg-form .users header .details span {
+  font-size: 18px;
+  font-weight: 500;
 }
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+  .driver-reg-form {
+      height: auto; 
+      min-height: 100vh;
+  }
 
-@keyframes move{
-    0%, 49.99%{
-        opacity: 0;
-        z-index: 1;
-    }
-    50%, 100%{
-        opacity: 1;
-        z-index: 5;
-    }
-}
+  .wrapper2 {
+      width: 90%;
+      max-width: 400px;
+  }
 
-.social-icons{
-    margin: 20px 0;
-}
+  .form3 header {
+      font-size: 20px; 
+  }
 
-.social-icons a{
-    border: 1px solid #ccc;
-    border-radius: 20%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3px;
-    width: 40px;
-    height: 40px;
-}
+  .form3 .form .field input {
+      font-size: 14px; 
+      height: 35px; 
+  }
 
-.toggle-container{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    transition: all 0.6s ease-in-out;
-    border-radius: 150px 0 0 100px;
-    z-index: 1000;
-}
+  .form3 .form .button input {
+      font-size: 16px; 
+      height: 40px; 
+  }
 
-.container1.active .toggle-container{
-    transform: translateX(-100%);
-    border-radius: 0 150px 100px 0;
-}
+  .driver-reg-form .users header .content img {
+      height: 40px;
+      width: 40px; 
+  }
 
-.toggle{
-    background-color:  #407BFF;
-    height: 100%;
-    background: linear-gradient(to right, #5c6bc0,  #407BFF);
-    color: #fff;
-    position: relative;
-    left: -100%;
-    height: 100%;
-    width: 200%;
-    transform: translateX(0);
-    transition: all 0.6s ease-in-out;
-}
-
-.container1.active .toggle{
-    transform: translateX(50%);
-}
-
-.toggle-panel{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 30px;
-    text-align: center;
-    top: 0;
-    transform: translateX(0);
-    transition: all 0.6s ease-in-out;
-}
-
-.toggle-panel h1{
-    padding: 0;
-    margin: 0;
-}
-
-.toggle-left{
-    transform: translateX(-200%);
-}
-
-.container1.active .toggle-left{
-    transform: translateX(0);
-}
-
-.toggle-right{
-    right: 0;
-    transform: translateX(0);
-}
-
-.container1.active .toggle-right{
-    transform: translateX(200%);
+  .driver-reg-form .users header .details span {
+      font-size: 16px; 
+  }
 }

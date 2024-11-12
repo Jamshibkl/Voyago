@@ -28,10 +28,12 @@ function Drivers() {
                   <td>7894561230</td>
                   <td>abc@gmail.com</td>
                   <td>12-1-2024</td>
-                  <div className="request-btn">
-                    <button className="accept-btn">Accept</button>
-                    <button className="reject-btn">Reject</button>
-                  </div>
+                  <td className="btn-td">
+                    <div className="request-btn">
+                      <button className="accept-btn">Accept</button>
+                      <button className="reject-btn">Reject</button>
+                    </div>
+                  </td>
                 </tr>
               </table>
             </div>

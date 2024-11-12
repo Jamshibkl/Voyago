@@ -1,9 +1,19 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
-// import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+import { NavLink, useNavigate } from "react-router-dom";
 import "./NavBar.css";
+
 function NavBar() {
+  const navigate = useNavigate();
+
+  function logoutSubmit() {
+    localStorage.setItem("login", "");
+    localStorage.setItem("loginStatus", "Logged out successfully!");
+    navigate("/login");
+  }
+
+  const user = localStorage.getItem("user");
+
   return (
     <Navbar
       collapseOnSelect
@@ -15,7 +25,7 @@ function NavBar() {
         <Navbar.Brand className="logo">VOYAGO</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="navbar-nav">
-          <Nav className="me-auto nav_links">
+          <Nav className=" nav_links">
             <Nav.Link as={NavLink} to="/" className="nav-link-with-space">
               Home
             </Nav.Link>
@@ -54,7 +64,7 @@ function NavBar() {
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={NavLink}
-                to="/admin"
+                to="/admin-login"
                 className="dropdown-items"
               >
                 Admin
@@ -80,27 +90,52 @@ function NavBar() {
               >
                 Book a Driver
               </NavDropdown.Item>
+              {/* Dropdown items */}
             </NavDropdown>
             <Nav.Link as={NavLink} to="/safety" className="nav-link-with-space">
               Safety
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/contact" className="nav-link-with-space">
+            <Nav.Link
+              as={NavLink}
+              to="/contact"
+              className="nav-link-with-space"
+            >
               Contact
             </Nav.Link>
           </Nav>
 
-          <Nav className="ms-auto">
-            <Nav.Link as={NavLink} to="/sign-in" className="nav-link-with-space">
-              Login
-            </Nav.Link>
-            <Nav.Link
-              as={NavLink}
-              to="/sign-up"
-              eventKey={2}
-              className="signup-btn"
+          <Nav className="nav-logo">
+            <NavDropdown
+              title={user ? user : "Login"}
+              id="user-dropdown"
+              className="nav-link-with-space"
             >
-              Sign Up
-            </Nav.Link>
+              {user ? (
+                <>
+                  <NavDropdown.Item
+                    className="dropdown-items"
+                    as={NavLink}
+                    to={`/on-the-way/${user}`}
+                  >
+                    Rides
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    className="dropdown-items"
+                    onClick={logoutSubmit}
+                  >
+                    Logout
+                  </NavDropdown.Item>
+                </>
+              ) : (
+                <NavDropdown.Item
+                  as={NavLink}
+                  to="/login"
+                  className="dropdown-items"
+                >
+                  Login
+                </NavDropdown.Item>
+              )}
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>

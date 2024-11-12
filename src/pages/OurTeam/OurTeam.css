@@ -1,74 +1,73 @@
-.main{
+.main {
     margin: 0;
     padding: 0;
-}
-body {
+  }
+  body {
     margin: 0;
     padding: 0;
-}
-
-.conatiner {
+  }
+  
+  .conatiner {
     width: 100%;
-}
-
-.ourTeam {
+  }
+  
+  .ourTeam {
     margin: 50px 180px;
-}
-
-.ourTeam h1 {
+  }
+  
+  .ourTeam h1 {
     padding: 10px;
     margin: 10px;
     font-size: 60px;
     text-align: center;
     font-weight: bold;
-    color: #407BFF;
-}
-
- .teamPara {
+    color: #407bff;
+  }
+  
+  .teamPara {
     text-align: center;
     font-size: 25px;
     width: 100%;
     margin: 0;
     line-height: 1.5;
     color: #8b8282;
-}
-
-.Founders {
+  }
+  
+  .Founders {
     display: flex;
     flex-direction: column;
     margin: 10px 70px;
     padding: 20px;
-}
-
-.Founders h3 {
+  }
+  
+  .Founders h3 {
     font-size: 35px;
     font-weight: 700;
     text-align: center;
     padding: 20px 20px 40px 20px;
-    color: #407BFF;
-}
-
-.founder {
+    color: #407bff;
+  }
+  
+  .founder {
     display: flex;
     justify-content: space-evenly;
-
-}
-
-.co-Founder {
+  }
+  
+  .co-Founder {
     width: 330px;
     max-height: 515px;
     padding: 15px;
     border-radius: 15px;
     background-color: #f4f4f4;
-}
-
-.co-Founder img {
+  }
+  
+  .co-Founder img {
     width: 200px;
     border-radius: 10px;
     margin: 13px 50px;
-}
-
-.co-Founder p {
+  }
+  
+  .co-Founder p {
     font-size: 19px;
     margin: 0;
     width: 300px;
@@ -76,25 +75,25 @@ body {
     line-height: 1.5;
     color: rgb(155, 149, 149);
     font-size: 16px;
-}
-.co-Founder h4{
+  }
+  .co-Founder h4 {
     text-align: center;
     font-size: 22px;
-}
-.co-Founder span {
+  }
+  .co-Founder span {
     font-size: 14px;
-}
-.ourCommitments {
+  }
+  .ourCommitments {
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.commitments {
+  }
+  
+  .commitments {
     width: 1120px;
-}
-
-.ourContent {
+  }
+  
+  .ourContent {
     width: 100%;
     padding: 10px;
     display: flex;
@@ -102,96 +101,164 @@ body {
     background-color: #f4f4f4;
     border-radius: 8px;
     height: 270px;
-}
-
-.our-img {
+  }
+  
+  .our-img {
     width: 700px;
-}
-.img_commitment{
+  }
+  .img_commitment {
     width: 300px;
-}
-
-.commitments-para {
+  }
+  
+  .commitments-para {
     margin-left: 25px;
     padding-right: 20px;
-}
-
-.commitments-para h3 {
+  }
+  
+  .commitments-para h3 {
     padding: 15px;
     font-weight: bold;
-    color: #407BFF;
-}
-.commitments-para p {
+    color: #407bff;
+  }
+  .commitments-para p {
     line-height: 2;
     color: rgb(130, 127, 120);
     width: 100%;
     margin-left: 20px;
-}
-.Opportunities{
+  }
+  .Opportunities {
     margin: 150px 0 20px;
     display: flex;
     justify-content: center;
     background-color: hsla(0, 0%, 96%, 0.611);
-
-}
-
-
-.joinUs h2 {
+  }
+  
+  .joinUs h2 {
     padding-top: 55px;
     text-align: center;
-    color: #407BFF;
+    color: #407bff;
     font-weight: bold;
-}
-
-.careerOpportunities {
+  }
+  
+  .careerOpportunities {
     display: flex;
     width: 1250px;
     padding: 50px;
-}
-
-.ourOpportunities {
+  }
+  
+  .ourOpportunities {
     width: 65%;
     margin-right: 30px;
-}
-
-.ourOpportunities h3 {
+  }
+  
+  .ourOpportunities h3 {
     text-align: left;
-    color: #407BFF;
+    color: #407bff;
     font-weight: bold;
     padding: 20px 0;
-}
-
-.ourOpportunities p {
+  }
+  
+  .ourOpportunities p {
     font-size: 21px;
     padding: 20px 0 25px;
     line-height: 2;
     color: #867e7e;
     width: 100%;
     margin-left: 10px;
-}
-
-.ourOpportunities button{
+  }
+  
+  .ourOpportunities button {
     width: 160px;
     height: 55px;
     font-size: 17px;
     font-weight: 600;
-    background-color: #407BFF ;
+    background-color: #407bff;
     color: #fff;
     border: none;
     border-radius: 8px;
     padding: 10px;
     cursor: pointer;
-}
-
-.ourOpportunities button:hover{
-    background-color: rgba(0, 149, 255, 0.814) ;
+  }
+  
+  .ourOpportunities button:hover {
+    background-color: rgba(0, 149, 255, 0.814);
     font-size: 18px;
-}
-.ourOpportunities button:active{
-    background-color: rgba(0, 149, 255, 0.364) ;
+  }
+  .ourOpportunities button:active {
+    background-color: rgba(0, 149, 255, 0.364);
     font-size: 18px;
-}
-
-.careerImg {
+  }
+  
+  .careerImg {
     width: 35%;
-}
+  }
+  /* Responsive Page CSS */
+  
+  /* For smaller devices */
+  @media screen and (max-width: 768px) {
+    .ourTeam {
+      margin: 50px 20px; /* Adjust margin for smaller devices */
+    }
+    .ourTeam h1 {
+      font-size: 40px; /* Decrease font size for smaller devices */
+    }
+    .teamPara {
+      font-size: 20px; /* Decrease font size for smaller devices */
+    }
+    .founder {
+      flex-direction: column;
+    }
+    .Founders {
+      margin: 10px 20px; /* Adjust margin for smaller devices */
+    }
+    .Founders h3 {
+      font-size: 30px; /* Decrease font size for smaller devices */
+      padding: 20px; /* Adjust padding for smaller devices */
+    }
+    .co-Founder {
+      width: 100%; /* Make co-founder container full width for smaller devices */
+      max-height: unset; /* Remove max-height for smaller devices */
+      margin: 10px; /* Adjust margin for smaller devices */
+    }
+    .co-Founder img {
+      width: 100%; /* Make co-founder image full width for smaller devices */
+      margin: 10px 0; /* Adjust margin for smaller devices */
+    }
+    .co-Founder p {
+      width: 100%; /* Make co-founder paragraph full width for smaller devices */
+      font-size: 14px; /* Decrease font size for smaller devices */
+    }
+    .commitments {
+      width: 100%; /* Make commitments container full width for smaller devices */
+      padding: 20px; /* Adjust padding for smaller devices */
+    }
+    .ourContent {
+      flex-direction: column; /* Change flex direction for smaller devices */
+      height: auto; /* Set height to auto for smaller devices */
+    }
+    .our-img {
+      width: 100%; /* Make image full width for smaller devices */
+    }
+    .img_commitment {
+      width: 100%; /* Make commitment image full width for smaller devices */
+    }
+    .careerOpportunities {
+      flex-direction: column; /* Change flex direction for smaller devices */
+      align-items: center; /* Center align items for smaller devices */
+      width: 100%; /* Make container full width for smaller devices */
+      padding: 20px; /* Adjust padding for smaller devices */
+    }
+    .ourOpportunities {
+      width: 100%; /* Make opportunities container full width for smaller devices */
+      margin-right: 0; /* Remove margin for smaller devices */
+      margin-top: 20px; /* Add margin for smaller devices */
+    }
+    .ourOpportunities button {
+      width: 100%; /* Make button full width for smaller devices */
+      margin-top: 20px; /* Add margin for smaller devices */
+    }
+    .careerImg {
+      display: none; /* Hide career image for smaller devices */
+    }
+  }
+  

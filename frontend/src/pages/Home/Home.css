@@ -97,6 +97,9 @@ p {
   font-weight: 900;
   margin-top: 70px;
 }
+.heading span{
+  color: var(--blue);
+}
 
 .main_left p {
   font-size: 20px;
@@ -387,4 +390,15 @@ p {
 }
 .car_avtar {
   animation: carAnimation 2s infinite linear;
+}
+.productcontiner {
+  width: 500px;
+  background-color: red;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productcontiner span {
+  color: white;
 }

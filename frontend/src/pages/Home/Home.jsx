@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { NavLink, useNavigate } from "react-router-dom";
 import CarAnimate from "../../Assets/Car driving-rafiki (2).svg";
@@ -8,11 +8,19 @@ import Review from "../../components/Review/Review";
 import FAQ from "../../components/FAQ/FAQ";
 import Footer from "../../components/Footer/Footer";
 import "./Home.css";
+import { handleError, handleSuccess } from "../../utils";
+import { ToastContainer } from "react-toastify";
 // import NavBar from "../../components/NavBar/NavBar";
 
 function Home() {
-  const navigate = useNavigate(); // Utilize useNavigate hook
+  const navigate = useNavigate();
   const [isAnimated, setIsAnimated] = useState(false);
+  const [products, setProducts] = useState("");
+  const [loggedInUser, setLoginInUser] = useState("");
+
+  useEffect(() => {
+    setLoginInUser(localStorage.getItem("loggedInUser"));
+  }, []);
 
   const handleBookClick = () => {
     const isLoggedIn = localStorage.getItem("login");
@@ -23,13 +31,35 @@ function Home() {
     }
     setIsAnimated(true);
   };
-  function logoutSubmit() {
-    localStorage.setItem("login", "");
-    // localStorage.setItem("loginStatus", "Logged out successfully!");
-    navigate("/login");
+  function handleLogout() {
+    localStorage.removeItem("token");
+    localStorage.removeItem("loggedInUser");
+    handleSuccess("user Loggedout!");
+    setTimeout(() => {
+      navigate("/login");
+    }, 1000);
   }
 
-  const user = localStorage.getItem("user");
+  const fetchProducts = async () => {
+    try {
+      const url = "http://localhost:8080/products";
+      const headers = {
+        headers: {
+          Authorization: localStorage.getItem("token"),
+        },
+      };
+      const response = await fetch(url, headers);
+      const result = await response.json();
+      console.log(result);
+      setProducts(result);
+    } catch (error) {
+      handleError(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
 
   return (
     <>
@@ -115,20 +145,20 @@ function Home() {
 
             <Nav className="ms-auto">
               <NavDropdown
-                title={user ? user : "Login"}
+                title={loggedInUser ? loggedInUser : "Login"}
                 id="home-dropdown"
                 className="nav-link-with-space text-light">
-                {user ? (
+                {loggedInUser ? (
                   <>
                     <NavDropdown.Item
                       className="dropdown-items"
                       as={NavLink}
-                      to={`/on-the-way/${user}`}>
+                      to={`/on-the-way/${loggedInUser}`}>
                       Rides
                     </NavDropdown.Item>
                     <NavDropdown.Item
                       className="dropdown-items"
-                      onClick={logoutSubmit}>
+                      onClick={handleLogout}>
                       Logout
                     </NavDropdown.Item>
                   </>
@@ -153,18 +183,19 @@ function Home() {
         <div className="main_left">
           <h1 className="heading">
             {" "}
-            Get Skillful Drivers,
+            <span>Get</span> Skillful Drivers,
             <br />
-            On-Demand
+            On-<span>Demand</span>
           </h1>
           <p>
             Voyago transforms the way you travel. Bringing skillful drivers to
             your doorstep, we make owning a car a pleasure.
           </p>
+
           {/* <NavLink to="/book-a-driver"> */}
-          <button  
-          className={`main_btn ${isAnimated ? "animate" : ""}`}
-           onClick={handleBookClick}>
+          <button
+            className={`main_btn ${isAnimated ? "animate" : ""}`}
+            onClick={handleBookClick}>
             Book a Driver
           </button>
           {/* </NavLink> */}
@@ -187,6 +218,19 @@ function Home() {
             personalized transportation
           </p>
         </div>
+        <div className="productcontiner">
+          {products &&
+            products.map((item, index) => (
+              <ul key={index}>
+                <li>
+                  <span>
+                    {item.name}: {item.price}
+                  </span>
+                </li>
+              </ul>
+            ))}
+        </div>
+        <ToastContainer />
         <Feature />
       </section>
       {/* Banner section */}

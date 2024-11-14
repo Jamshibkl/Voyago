@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
 import AboutUs from "./pages/AboutUs/AboutUs";
@@ -36,12 +36,21 @@ import Customers from "./Admin/Components/Customers/Customers";
 import Transactions from "./Admin/Components/Transactions/Transactions";
 import TotalDrivers from "./Admin/Components/Total-Drivers/TotalDrivers";
 import TotalAdmin from "./Admin/Components/total-admins/TotalAdmins";
+import Login from "./components/Sign-in-up/Login";
+import RefreshHandler from "./components/RefreshHandler";
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+   const PrivateRoute = ({ element }) => {
+    return isAuthenticated ? element : <Navigate to='/login' />
+   }
+
   return (
     <div className="App">
+      
       <Router>
+      <RefreshHandler setIsAuthenticated={setIsAuthenticated}/>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<PrivateRoute element={<Home />} />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/our-team" element={<OurTeam />} />
           <Route path="/become-a-driver" element={<BecomeaDriver />} />
@@ -75,7 +84,7 @@ function App() {
           <Route path="/transactions" element={<Transactions />} />
           <Route path="/total-drivers" element={<TotalDrivers />} />
           <Route path="/total-admin" element={<TotalAdmin />} />
-
+          <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
     </div>

@@ -62,7 +62,7 @@ Contributions are welcome! Feel free to open issues and submit pull requests to 
 
 ## 📄 License
 
-This project is licensed under the [Your License Name] - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [Your License Name] - see the [LICENSE] file for details.
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify

@@ -12,7 +12,7 @@ function RefreshHandler({setIsAuthenticated}) {
                 location.pathname === '/login' ||
                 location.pathname === '/sign-in'
             ) {
-                navigate('/book-a-driver', {replace: false});
+                navigate('/', {replace: true});
             }
                 )
         }

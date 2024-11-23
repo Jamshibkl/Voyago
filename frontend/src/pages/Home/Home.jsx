@@ -192,13 +192,12 @@ function Home() {
             your doorstep, we make owning a car a pleasure.
           </p>
 
-          {/* <NavLink to="/book-a-driver"> */}
+          <NavLink to="/book-a-driver">
           <button
-            className={`main_btn ${isAnimated ? "animate" : ""}`}
-            onClick={handleBookClick}>
+            className={`main_btn ${isAnimated ? "animate" : ""}`}>
             Book a Driver
           </button>
-          {/* </NavLink> */}
+          </NavLink>
         </div>
         <div className="main-right">
           <div className="main_container">
@@ -218,7 +217,7 @@ function Home() {
             personalized transportation
           </p>
         </div>
-        <div className="productcontiner">
+        {/* <div className="productcontiner">
           {products &&
             products.map((item, index) => (
               <ul key={index}>
@@ -229,7 +228,7 @@ function Home() {
                 </li>
               </ul>
             ))}
-        </div>
+        </div> */}
         <ToastContainer />
         <Feature />
       </section>

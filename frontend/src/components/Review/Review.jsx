@@ -1,91 +1,95 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper/modules"; // Updated import
 import "./Review.css";
+
 function Review() {
+  const reviews = [
+    {
+      img: "https://cdn.builder.io/api/v1/image/assets/TEMP/f9015e3fa8f38dcf39ceecf9e609401110eda909787f208ecf51006f3668f81c",
+      name: "Emily Turner",
+      text: "Safety is my top priority, and Voyago delivers. I appreciate the emphasis on both convenience and security.",
+    },
+    {
+      img: "https://cdn.builder.io/api/v1/image/assets/TEMP/87883f3c327cccdd1dafe3648874f5765b7e497b4801e72ab045cf3abab4b264",
+      name: "David Foster",
+      text: "Safety is my top priority, and Voyago delivers. I appreciate the emphasis on both convenience and security.",
+    },
+    {
+      img: "https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443",
+      name: "Sophie Chen",
+      text: "I love the flexibility Voyago offers with scheduling. It's a time-saver and has become integral to my routine.",
+    },
+    {
+      img: "https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443",
+      name: "Sophie Chen",
+      text: "I love the flexibility Voyago offers with scheduling. It's a time-saver and has become integral to my routine.",
+    },
+    {
+      img: "https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443",
+      name: "Sophie Chen",
+      text: "I love the flexibility Voyago offers with scheduling. It's a time-saver and has become integral to my routine.",
+    },
+  ];
+
+  useEffect(() => {
+    // Intersection Observer to trigger animations
+    const reviewCards = document.querySelectorAll('.review-card');
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible'); // Add visible class when in view
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 }); // Trigger when 50% of the element is in view
+
+    reviewCards.forEach(card => observer.observe(card));
+
+    return () => {
+      observer.disconnect(); // Clean up the observer when the component unmounts
+    };
+  }, []);
+
   return (
-    <>
-      <div className="review">
-        <div className="review-2">
-          <img
-            loading="lazy"
-            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/f9015e3fa8f38dcf39ceecf9e609401110eda909787f208ecf51006f3668f81c?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9015e3fa8f38dcf39ceecf9e609401110eda909787f208ecf51006f3668f81c?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9015e3fa8f38dcf39ceecf9e609401110eda909787f208ecf51006f3668f81c?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9015e3fa8f38dcf39ceecf9e609401110eda909787f208ecf51006f3668f81c?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9015e3fa8f38dcf39ceecf9e609401110eda909787f208ecf51006f3668f81c?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9015e3fa8f38dcf39ceecf9e609401110eda909787f208ecf51006f3668f81c?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9015e3fa8f38dcf39ceecf9e609401110eda909787f208ecf51006f3668f81c?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9015e3fa8f38dcf39ceecf9e609401110eda909787f208ecf51006f3668f81c?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"
-            className="review_img"
-          />
-          <div className="review-3">Emily Turner</div>
-          <div className="review-4">
-            &quot;Voyago made my daily commute stress-free and enjoyable. The
-            skillful drivers and real-time tracking ensure a smooth journey
-            every time. Highly recommended!&quot;
-          </div>
-        </div>
-        <div className="review-5">
-          <img
-            loading="lazy"
-            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/87883f3c327cccdd1dafe3648874f5765b7e497b4801e72ab045cf3abab4b264?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/87883f3c327cccdd1dafe3648874f5765b7e497b4801e72ab045cf3abab4b264?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/87883f3c327cccdd1dafe3648874f5765b7e497b4801e72ab045cf3abab4b264?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/87883f3c327cccdd1dafe3648874f5765b7e497b4801e72ab045cf3abab4b264?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/87883f3c327cccdd1dafe3648874f5765b7e497b4801e72ab045cf3abab4b264?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/87883f3c327cccdd1dafe3648874f5765b7e497b4801e72ab045cf3abab4b264?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/87883f3c327cccdd1dafe3648874f5765b7e497b4801e72ab045cf3abab4b264?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/87883f3c327cccdd1dafe3648874f5765b7e497b4801e72ab045cf3abab4b264?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"
-            className="review_img"
-          />
-          <div className="review-6">David Foster</div>
-          <div className="review-7">
-            Safety is my top priority, and Voyago delivers. The secure
-            authentication process instills confidence. I appreciate the
-            emphasis on both convenience and security.&quot;
-          </div>
-        </div>
-        <div className="review-8">
-          <img
-            loading="lazy"
-            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"
-            className="review_img"
-          />
-          <div className="review-9">Sophie Chen</div>
-          <div className="review-10">
-            {" "}
-            &quot;I love the flexibility Voyago offers with scheduling. It's a
-            time-saver, and the drivers are always friendly. Voyago has become
-            an integral part of my daily routine.&quot;
-          </div>
-        </div>{" "}
-        <div className="review-11">
-          <img
-            loading="lazy"
-            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/9c60d074cf48120f031cfdab2b9b281575166c0a13099885bf110583f1f1e9a8?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c60d074cf48120f031cfdab2b9b281575166c0a13099885bf110583f1f1e9a8?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c60d074cf48120f031cfdab2b9b281575166c0a13099885bf110583f1f1e9a8?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c60d074cf48120f031cfdab2b9b281575166c0a13099885bf110583f1f1e9a8?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c60d074cf48120f031cfdab2b9b281575166c0a13099885bf110583f1f1e9a8?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c60d074cf48120f031cfdab2b9b281575166c0a13099885bf110583f1f1e9a8?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c60d074cf48120f031cfdab2b9b281575166c0a13099885bf110583f1f1e9a8?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c60d074cf48120f031cfdab2b9b281575166c0a13099885bf110583f1f1e9a8?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"
-            className="review_img"
-          />{" "}
-          <div className="review-12">Alex Rodriguez</div>{" "}
-          <div className="review-13">
-            &quot;Transparent pricing and personalized preferences make Voyago
-            my go-to for rides. The in-app communication is a game-changer. The
-            team truly cares about user experience!&quot;
-          </div>
-        </div>{" "}
-        <div className="review-14">
-          <img
-            loading="lazy"
-            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/ac53114cf45e33687d5d7978d5f4389c601bcea800cf77103687afab481000bd?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/ac53114cf45e33687d5d7978d5f4389c601bcea800cf77103687afab481000bd?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ac53114cf45e33687d5d7978d5f4389c601bcea800cf77103687afab481000bd?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/ac53114cf45e33687d5d7978d5f4389c601bcea800cf77103687afab481000bd?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/ac53114cf45e33687d5d7978d5f4389c601bcea800cf77103687afab481000bd?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ac53114cf45e33687d5d7978d5f4389c601bcea800cf77103687afab481000bd?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/ac53114cf45e33687d5d7978d5f4389c601bcea800cf77103687afab481000bd?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/ac53114cf45e33687d5d7978d5f4389c601bcea800cf77103687afab481000bd?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"
-            className="review_img"
-          />{" "}
-          <div className="review-15">Michael Thompson</div>{" "}
-          <div className="review-16">
-            &quot;Voyago's service is fantastic. The personalized experience and
-            efficient scheduling options make it stand out. It's been a reliable
-            companion for my daily travels.&quot;
-          </div>
-        </div>
-        {/* <div className="review-17">
-          <img
-            loading="lazy"
-            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff8d7a1fb6ad6252bcd4bb596078b417117bf4edd5a0036027d6ab42cf84a443?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"
-            className="review_img"
-          />{" "}
-          <div className="review-18">Sophie Chen</div>{" "}
-          <div className="review-19">
-            {" "}
-            &quot;I love the flexibility Voyago offers with scheduling. It's a
-            time-saver, and the drivers are always friendly. Voyago has become
-            an integral part of my daily routine.&quot;
-          </div>
-        </div> */}
-      </div>
-    </>
+    <div className="review-container">
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={20}
+        pagination={{
+          clickable: true,
+        }}
+        navigation
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        modules={[Pagination, Navigation]} // Correct usage
+        className="mySwiper"
+      >
+        {reviews.map((review, index) => (
+          <SwiperSlide key={index}>
+            <div className="review-card">
+              <div className="review-img-container">
+                <img
+                  loading="lazy"
+                  src={review.img}
+                  className="review-img"
+                  alt={review.name}
+                />
+              </div>
+              <div className="review-name">{review.name}</div>
+              <div className="review-text">"{review.text}"</div>
+              <button className="review-btn">Read More</button>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }
 

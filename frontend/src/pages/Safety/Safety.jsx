@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Safety.css";
 import safety from "../../Assets/safety.jpg";
 import covid from "../../Assets/covid19 family safety new bg.jpg";
 import safety_img from "../../Assets/istockphoto-1205892464-612x612.jpg";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
+import AOS from "aos"; // Import AOS
+import "aos/dist/aos.css"; // Import AOS styles
 
 function Safety() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // Initialize AOS with custom options
+  }, []);
+
   return (
     <div className="safety-section">
-      <NavBar/>
-      <div className="ourSafety">
+      <NavBar />
+      <div className="ourSafety" data-aos="fade-up">
         <div className="info">
           <h1>Safe Journeys Start Here: Voyago's Commitment to Safety</h1>
           <p>
@@ -25,10 +31,10 @@ function Safety() {
         </div>
       </div>
 
-      <div className="our-section2">
+      <div className="our-section2" data-aos="fade-right">
         <h2>Passenger Safety</h2>
         <div className="passengers">
-          <div className="safetys">
+          <div className="safetys" data-aos="zoom-in">
             <h4>Driver Screening</h4>
             <p>
               We rigorously screen all our drivers to ensure they meet our
@@ -37,7 +43,7 @@ function Safety() {
               drive with Voyago.
             </p>
           </div>
-          <div className="safetys">
+          <div className="safetys" data-aos="zoom-in">
             <h4>Real-Time Tracking</h4>
             <p>
               Track your ride in real-time using the Voyago app. Know exactly
@@ -45,7 +51,7 @@ function Safety() {
               mind throughout your journey.
             </p>
           </div>
-          <div className="safetys">
+          <div className="safetys" data-aos="zoom-in">
             <h4>Secure Payments</h4>
             <p>
               Payment transactions on Voyago are encrypted and secure. Your
@@ -54,87 +60,27 @@ function Safety() {
             </p>
           </div>
         </div>
-
-        <h2>Driver Safety</h2>
-        <div className="drivers-section">
-          <div className="safetys">
-            <h4>Passenger Verification</h4>
-            <p>
-              To ensure the safety of our drivers, passengers are required to
-              verify their identity before booking a ride. This helps prevent
-              unauthorized or fraudulent bookings and promotes a secure
-              environment for drivers
-            </p>
-          </div>
-          <div className="safetys">
-            <h4>Emergency Assistance</h4>
-            <p>
-              In case of emergencies, drivers have access to emergency
-              assistance features on the Voyago app. They can quickly contact
-              emergency services or alert our support team for immediate
-              assistance.
-            </p>
-          </div>
-          <div className="safetys">
-            <h4>Safe Driving Practices</h4>
-            <p>
-              We prioritize safe driving practices through education and
-              training, emphasizing defensive driving techniques and customer
-              interaction to ensure passenger safety and comfort.
-            </p>
-          </div>
-        </div>
       </div>
 
-      <div className="safetyMeasures">
+      <div className="safetyMeasures" data-aos="fade-left">
         <h2>COVID-19 Safety Measures</h2>
         <div className="covid-information">
-          <div className="covid-img">
+          <div className="covid-img" data-aos="fade-up">
             <img src={covid} alt="" />
           </div>
-          <div className="covid-info">
+          <div className="covid-info" data-aos="fade-down">
             <p>
               Amidst the COVID-19 pandemic, we've implemented stringent safety
               measures to protect our passengers and drivers. These include
               rigorous sanitization protocols, mandatory face coverings, and a
               contactless experience to minimize transmission risk and
-              prioritize the health and well-being of everyone in our community
+              prioritize the health and well-being of everyone in our community.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="covid-safety">
-        <div className="covid-safety-section">
-          <i class="fa-solid fa-pump-soap"></i>
-          <h4>Sanitization Protocols</h4>
-          <p>
-            In response to the COVID-19 pandemic, we have implemented rigorous
-            sanitization protocols for our vehicles. High-touch surfaces are
-            regularly cleaned and disinfected to minimize the risk of
-            transmission.
-          </p>
-        </div>
-        <div className="covid-safety-section">
-          <h4>Contactless Experience</h4>
-          <p>
-            Face coverings are mandatory for both passengers and drivers during
-            rides. This helps reduce the spread of respiratory droplets and
-            enhances the safety of everyone onboard.
-          </p>
-        </div>
-        <div className="covid-safety-section">
-          <h4>Secure Payments</h4>
-          <p>
-            Minimize physical contact during your ride with our contactless
-            experience. Book, pay, and communicate with your driver through the
-            Voyago app to maintain a safe distance and reduce the risk of
-            transmission.
-          </p>
-        </div>
-      </div>
-
-      <div className="communitySafety">
+      <div className="communitySafety" data-aos="fade-up">
         <div className="community-info">
           <h1 className="community-heading">Community Safety</h1>
           <p className="community-para">
@@ -150,27 +96,7 @@ function Safety() {
         </div>
       </div>
 
-      <div className="safety-features">
-        <div className="reporting-Features">
-          <h5 className="feature-heading">Reporting Features</h5>
-          <p className="feature-para">
-            Our reporting features empower both passengers and drivers to report
-            any safety concerns or incidents they encounter during their ride.
-            Prompt action is taken to address reported issues and ensure the
-            safety of our community.
-          </p>
-        </div>
-        <div className="safety-Education">
-          <h5 className="feature-heading">Safety Education</h5>
-          <p className="feature-para">
-            We believe in fostering a culture of safety awareness and education
-            within our community. Resources and tips on staying safe while using
-            Voyago are readily available to passengers and drivers.
-          </p>
-        </div>
-      </div>
-
-      <div className="contact-team">
+      <div className="contact-team" data-aos="fade-in">
         <h4 className="contact-heading">Contact Us</h4>
         <h6 className="contact-heading">Have Questions?</h6>
         <p className="team-para">
@@ -179,7 +105,7 @@ function Safety() {
           you and address any inquiries you may have.
         </p>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

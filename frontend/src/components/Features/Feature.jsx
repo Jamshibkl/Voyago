@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DrivingImage from "../../Assets/Car driving-bro.svg";
 import "./Feature.css";
+
 function Feature() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const features = document.querySelectorAll(".feature-row");
+      features.forEach((feature) => {
+        const rect = feature.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.8) {
+          feature.classList.add("animate");
+        }
+      });
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className="feature-row">
@@ -58,7 +75,10 @@ function Feature() {
 
       <div className="feature-row">
         <div className="feature-imgae">
-          <img  src="https://cdn.builder.io/api/v1/image/assets/TEMP/08a17c6949b4a689a408fb4b4d9d7cc7c9dd3ba22c2349b82e311e4ca3cba080?apiKey=b5f3e675c69d443bb59ae6ade7d87645&" alt="" />
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/08a17c6949b4a689a408fb4b4d9d7cc7c9dd3ba22c2349b82e311e4ca3cba080?apiKey=b5f3e675c69d443bb59ae6ade7d87645&"
+            alt=""
+          />
         </div>
         <div className="feature-content">
           <h2>Transparent Pricing</h2>

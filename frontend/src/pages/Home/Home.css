@@ -72,7 +72,6 @@ body {
   background-color: var(--white) !important;
 }
 
-/* main section */
 .main_section {
   width: 100%;
   margin-top: -65px;
@@ -86,18 +85,18 @@ body {
   margin-top: 20px;
 }
 
-.main_btn,
+.main_section .main_btn,
 h1,
 p {
-  margin-left: 120px;
+  margin-left: 135px;
 }
 
-.heading {
+.main_section .heading {
   font-size: 90px;
   font-weight: 900;
   margin-top: 70px;
 }
-.heading span{
+.heading span {
   color: var(--blue);
 }
 
@@ -129,11 +128,9 @@ p {
   margin-top: 10px;
 }
 
-.main_btn:active{
+.main_btn:active {
   background: hsla(221, 100%, 63%, 0.7);
 }
-
-
 
 .main_container {
   background: var(--blue);
@@ -148,59 +145,54 @@ p {
   margin-left: -180px;
   margin-top: -50px;
 }
-/* Responsive CSS */
-
-/* For smaller devices */
 
 @media screen and (max-width: 992px) {
   .main_section {
-    flex-direction: column; /* Change flex direction for smaller devices */
-    align-items: center; /* Center align items for smaller devices */
+    flex-direction: column;
+    align-items: center;
   }
   .me-auto {
     text-align: center;
   }
 
   .main_left {
-    width: 80%; /* Adjust width for smaller devices */
-    text-align: center; /* Center align text for smaller devices */
+    width: 80%;
+    text-align: center;
   }
 
   .main_btn,
   h1,
   p {
-    margin-left: 0; /* Remove left margin for smaller devices */
+    margin-left: 0;
   }
 
   .heading {
-    font-size: 40px; /* Decrease font size for smaller devices */
-    margin-top: 50px; /* Adjust top margin for smaller devices */
+    font-size: 40px;
+    margin-top: 50px;
   }
 
   .main_left p {
-    width: 90%; /* Adjust width for smaller devices */
-    margin: 20px auto; /* Center align paragraph for smaller devices */
+    width: 90%;
+    margin: 20px auto;
   }
 
   .main_btn {
-    width: 100%; /* Adjust button width for smaller devices */
-    margin: 20px 0; /* Adjust top margin for smaller devices */
+    width: 100%;
+    margin: 20px 0;
   }
 
   .main_container {
-    width: 100%; /* Adjust width for smaller devices */
-    border-radius: 20px; /* Adjust border radius for smaller devices */
-    margin-bottom: 30px; /* Adjust bottom margin for smaller devices */
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 30px;
   }
 
   .car_avtar {
-    width: 100%; /* Make image full width for smaller devices */
-    margin-left: 0; /* Remove left margin for smaller devices */
-    margin-top: 0; /* Remove top margin for smaller devices */
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
   }
 }
-
-/* feature section */
 
 .feature_section {
   width: 100%;
@@ -237,7 +229,6 @@ p {
   width: 100%;
 }
 
-/* feedback */
 .feedback_heading {
   color: var(--blue);
   text-align: center;
@@ -245,19 +236,20 @@ p {
   margin-top: 81px;
   font: 800 40px Inter, sans-serif;
 }
-/* FAQ section */
+
 .Faq_heading {
   color: var(--blue);
   text-align: center;
   align-self: center;
   margin-top: 81px;
-  font: 800 40px Inter, sans-serif;
+  font: 600 30px Inter, sans-serif;
 }
 
 .faq_container {
   width: 80%;
   margin: auto;
 }
+
 .main_section {
   animation-name: fadeInDown;
   animation-duration: 1s;
@@ -305,6 +297,7 @@ p {
     transform: translateX(0);
   }
 }
+
 .main-right {
   animation-name: fadeInRight;
   animation-duration: 1s;
@@ -349,7 +342,7 @@ p {
     transform: translateY(-20px);
   }
 }
-/* Add hover effect for the button */
+
 .main_btn {
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -363,11 +356,10 @@ p {
     #53cbef 100%
   );
   animation: slidernbw 5s linear infinite;
-  color: #000; /* Change to desired hover background color */
-  transform: scale(1.05); /* Scale the button on hover */
+  color: #000;
+  transform: scale(1.05);
 }
 
-/* Add animation for the button */
 @keyframes pulseAnimation {
   0% {
     transform: scale(1);
@@ -379,6 +371,7 @@ p {
     transform: scale(1);
   }
 }
+
 @keyframes slidernbw {
   to {
     background-position: 20vw;
@@ -388,9 +381,11 @@ p {
 .main_btn.animate {
   animation: pulseAnimation 2s infinite;
 }
+
 .car_avtar {
   animation: carAnimation 2s infinite linear;
 }
+
 .productcontiner {
   width: 500px;
   background-color: red;

@@ -11,9 +11,9 @@ function RefreshHandler({setIsAuthenticated}) {
             if (
                 location.pathname === '/login' ||
                 location.pathname === '/sign-in'
-            // ) {
-            //     navigate('/', {replace: false});
-            // }
+            ) {
+                navigate('/book-a-driver', {replace: false});
+            }
                 )
         }
     }, [location, navigate, setIsAuthenticated]);

@@ -29,7 +29,7 @@ function Login() {
        return handleError('All fields are required!');
    }
   try {
-        const url = "https://voyago.vercel.app/auth/login";
+        const url = "http://localhost:8080/auth/login";
         const response = await fetch(url, {
           method : "POST",
           headers: {

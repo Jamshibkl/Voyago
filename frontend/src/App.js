@@ -11,11 +11,14 @@ import Safety from "./pages/Safety/Safety";
 import ServiceStatus from "./pages/ServiceStatus/ServiceStatus";
 import LeagalPrivacy from "./pages/LeagalAandPrivacy/LeagalPrivacy";
 import BookADriver from "./components/Book-a-Driver/Booking-form/BookADriver"
+import LoadingPage from "./components/Book-a-Driver/Booking-form/LoadingPage/LoadingPage";
+import RideTime from "./components/Book-a-Driver/Booking-form/RideTime/RideTime";
 import DriverOnWay from "./components/Book-a-Driver/Driver-on-way/DriverOnWay";
 import Destination from "./components/Book-a-Driver/Destination/Destination";
 import OnTheWay from "./components/Book-a-Driver/OnTheWay/OnTheWay";
 import PaymentSection from "./components/Book-a-Driver/PaymentSection/PaymentSection";
-import DriverConform from "./components/Book-a-Driver/Driver-conformed/DriverConform";
+import DriverConform from "./components/Book-a-Driver/Booking-form/DriverConform/DriverConform";
+import PaymentCheckout from "./components/Book-a-Driver/PaymentCheckout/Chekout";
 import DriverLoginOtp from "./components/Driver/DriverLogin/DriverLoginOtp/DriverLoginOtp";
 import ContactUs from "./pages/ContactUS/ContactUs";
 import SignInUp from "./components/Sign-in-up/SignInUp";
@@ -50,7 +53,7 @@ function App() {
       <Router>
       <RefreshHandler setIsAuthenticated={setIsAuthenticated}/>
         <Routes>
-          <Route path="/" element={<Home>} />
+          <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/our-team" element={<OurTeam />} />
           <Route path="/become-a-driver" element={<BecomeaDriver />} />
@@ -58,8 +61,13 @@ function App() {
           <Route path="/safety" element={<Safety />} />
           <Route path="/service-status" element={<ServiceStatus />} />
           <Route path="/leagal-privacy" element={<LeagalPrivacy />} />
-          <Route path="/book-a-driver" element={<PrivateRoute element={<BookADriver />} />} />
+          <Route path="/book-a-driver" element={<BookADriver />} />
+          <Route path="/find-a-driver" element={<LoadingPage />} />
           <Route path="/driver-confirm" element={<DriverConform />} />
+          <Route path="/ride-started" element={<RideTime />} />
+          <Route
+            path="/payment-checkout" element={<PaymentCheckout />}
+          />
           <Route path="/driver-on-way" element={<DriverOnWay />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/sign-in" element={<SignInUp />} />

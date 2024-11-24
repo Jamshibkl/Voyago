@@ -203,6 +203,12 @@ function Home() {
           <div className="main_container">
             <img src={CarAnimate} alt="" className="car_avtar" />
           </div>
+          <NavLink to="/book-a-driver">
+          <button 
+            className={`main_btn2 ${isAnimated ? "animate" : ""}`}>
+            Book a Driver
+          </button>
+          </NavLink>
         </div>
       </section>
       {/* feture section */}

@@ -65,7 +65,8 @@
   }
 
   .feature-content h2 {
-    font-size: 30px;
+    font-size: 28px;
+    color: var(--blue);
   }
 
   .feature-content p {

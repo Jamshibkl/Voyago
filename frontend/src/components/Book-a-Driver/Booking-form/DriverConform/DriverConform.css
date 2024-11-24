@@ -1,0 +1,181 @@
+:root {
+    --primary-color: #407bff;
+    --table-bg: #f9f9f9;
+    --table-header-bg: #407bff;
+    --table-header-color: #ffffff;
+    --text-color: #333333;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .confirme-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .driver-conform-headings {
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .driver-conform-headings h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  .booking-details-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: var(--table-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table th,
+  table td {
+    padding: 15px;
+    text-align: left;
+    color: var(--text-color);
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  table th {
+    background: var(--table-header-bg);
+    color: var(--table-header-color);
+    font-weight: bold;
+  }
+  
+  table tr td {
+    background: #e9ebef62;
+    color: rgba(0, 0, 0, 0.586);
+    font-weight: bold;
+  }
+  
+  table tr:hover {
+    background: #eaf3ff;
+    cursor: default;
+  }
+  
+  .driver-info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .driver-info-section img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+  }
+  
+  .otp-section input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+  }
+  
+  .otp-section button {
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .otp-section button:hover {
+    background: #306bcc;
+  }
+  
+  /* Responsive CSS */
+  @media screen and (max-width: 768px) {
+    .confirme-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .driver-conform-headings {
+      width: 100%;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    .booking-details-wrapper {
+      margin-bottom: 10px;
+    }
+  
+    table th,
+    table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    table {
+      margin-bottom: 10px;
+    }
+  
+    .driver-info-section img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .otp-section input {
+      width: 90%;
+      font-size: 14px;
+    }
+  
+    .otp-section button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    table {
+      font-size: 12px;
+    }
+  
+    table th,
+    table td {
+      padding: 8px;
+    }
+  
+    h3 {
+      font-size: 18px;
+    }
+  
+    .otp-section input {
+      width: 100%;
+      padding: 8px;
+    }
+  
+    .otp-section button {
+      padding: 8px 12px;
+    }
+  }
+  

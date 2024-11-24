@@ -1,113 +1,170 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import Navbar from "../../NavBar/NavBar";
+import BookingImg from "../../../Assets/book a drive image.jpg";
 import "./BookADriver.css";
-import BookingImage from "../../../Assets/travel-ilustra.jpg";
-import NavBar from "../../../components/NavBar/NavBar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLocationDot,
-  faCircleStop,
-  faCalendar,
-  faClock,
-  faTaxi,
-} from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function BookADriver() {
-  const [pickupDate, setPickupDate] = useState("");
-  const [pickupTime, setPickupTime] = useState("");
+  // const name = localStorage.getItem("user");
+  // const [username, setUsername] = useState("");
+  // const [mobile, setMobile] = useState("");
+  // const [pickupLocation, setPickupLocation] = useState("");
+  // const [dropoffLocation, setDropoffLocation] = useState("");
+  // const [pickupDate, setPickupDate] = useState("");
+  // const [pickupTime, setPickupTime] = useState("");
+  // const [cabType, setCabType] = useState("");
+  // const [error, setError] = useState("");
+  // const [msg, setMsg] = useState("");
 
-  const handleDateFocus = () => {
-    document.getElementById("pickupDate").type = "date";
-  };
+  // const navigate = useNavigate();
 
-  const handleDateBlur = () => {
-    if (!pickupDate) {
-      document.getElementById("pickupDate").type = "text";
-    }
-  };
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setMsg("");
+  //   }, 1000);
+  //   return () => clearTimeout(timer);
+  // }, [msg]);
 
-  const handleTimeFocus = () => {
-    document.getElementById("pickuptime").type = "time";
-  };
+  // function handleSubmit() {
+  //   const currentDate = new Date();
+  //   const selectedDate = new Date(pickupDate);
 
-  const handleTimeBlur = () => {
-    if (!pickupTime) {
-      document.getElementById("pickuptime").type = "text";
-    }
-  };
+  //   if (selectedDate < currentDate) {
+  //     setError("Please select a future date and time.");
+  //     return;
+  //   }
+  //   if (mobile.length !== 10 || isNaN(mobile)) {
+  //     setError("Mobile number must be 10 digits.");
+  //     return;
+  //   }
+
+  //   if (
+  //     username !== "" &&
+  //     mobile !== "" &&
+  //     pickupLocation !== "" &&
+  //     dropoffLocation !== "" &&
+  //     pickupDate !== "" &&
+  //     pickupTime !== "" &&
+  //     cabType !== ""
+  //   ) {
+  //     localStorage.setItem("pickup", pickupLocation);
+  //     localStorage.setItem("dropoffLocation", dropoffLocation);
+  //     localStorage.setItem("username", username);
+  //     localStorage.setItem("pickupTime", pickupTime);
+  //     localStorage.setItem("pickupDate", pickupDate);
+  //     localStorage.setItem("cabType", cabType);
+  //     localStorage.setItem("mobile", mobile);
+
+  //     navigate("/find-a-driver");
+  //     setUsername("");
+  //     setPickupLocation("");
+  //     setDropoffLocation("");
+  //     setPickupDate("");
+  //     setPickupTime("");
+  //     setMobile("");
+  //     setCabType("");
+  //     setMsg("Driver requested successfully!");
+  //   } else {
+  //     setError("All fields are required!");
+  //   }
+  // }
 
   return (
     <>
-      <NavBar />
-      <div className="book-ride-section">
-        <div className="booking-form">
-          <h1>Conform the Ride</h1>
-          <form action="">
-            <div className="input-with-icon">
-              <FontAwesomeIcon
-                icon={faLocationDot}
-                className="booking-input-icon"
-              />
-              <input type="text" placeholder="Pick up Location" />
-            </div>
-            <div className="input-with-icon">
-              <FontAwesomeIcon
-                icon={faCircleStop}
-                className="booking-input-icon"
-              />
-              <input type="text" placeholder="Dropoff Location" />
-            </div>
-            <br />
-            <div className="input-with-icon">
-              <FontAwesomeIcon
-                icon={faCalendar}
-                className="booking-input-icon"
-              />
+      <Navbar />
+      <section className="user-booking">
+        <div className="booikg-container">
+          <div className="booking-img">
+            <img src={BookingImg} alt="" />
+          </div>
+{/* 
+          <p className="valid-msg">
+            {msg ? <span className="success">{msg}</span> : <span className="error">{error}</span>}
+          </p> */}
+          <div className="form-username">
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter Your User Name "
+              // value={username}
+              // onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+          <div className="form-picup">
+            <input
+              type="text"
+              name="pickupLocation"
+              placeholder="Enter 4 letters to Search Your Pickup Location"
+              // value={pickupLocation}
+              // onChange={(e) => setPickupLocation(e.target.value)}
+            />
+          </div>
+          <div className="form-outline">
+            <input
+              type="text"
+              name="dropoffLocation"
+              placeholder=" Enter 4 letters to Search Your Dropoff Location"
+              // value={dropoffLocation}
+              // onChange={(e) => setDropoffLocation(e.target.value)}
+            />
+          </div>
+          <div className="form-outline">
+            <input
+              type="text"
+              name="mobile"
+              placeholder="Enter Your Mobile number"
+              // value={mobile}
+              // onChange={(e) => setMobile(e.target.value)}
+            />
+          </div>
+          <div className="bookig-date-time">
+            <div className="form-picup-info ">
+              <label className="form-label">Pickup Date</label>
+              <br />
               <input
-                placeholder="Pick up Date"
+                type="date"
                 name="pickupDate"
-                id="pickupDate"
-                value={pickupDate}
-                onFocus={handleDateFocus}
-                onBlur={handleDateBlur}
-                onChange={(e) => setPickupDate(e.target.value)}
+                // value={pickupDate}
+                // onChange={(e) => setPickupDate(e.target.value)}
               />
             </div>
-            <div className="input-with-icon">
-              <FontAwesomeIcon icon={faClock} className="booking-input-icon" />
+            <div className="form-picup-info ">
+              <label className="form-label">Pickup Time</label>
+              <br />
               <input
-                name="pickuptime"
-                id="pickuptime"
-                value={pickupTime}
-                placeholder="Pick Up Time"
-                onFocus={handleTimeFocus}
-                onBlur={handleTimeBlur}
-                onChange={(e) => setPickupTime(e.target.value)}
+                type="time"
+                name="pickupTime"
+                // value={pickupTime}
+                // onChange={(e) => setPickupTime(e.target.value)}
               />
             </div>
-            <br />
-            <div className="input-with-icon">
-              <FontAwesomeIcon icon={faTaxi} className="booking-input-icon" />
-              <select>
-                <option value="">Cab Type</option>
-                <option value="">Luxury</option>
-                <option value="">SUV</option>
-                <option value="">Innova</option>
-                <option value="">Sedan</option>
-              </select>
-            </div>
-          </form>
-          <Link to="/driver-on-way">
-            <button className="booking-btn">Book a Ride</button>
-          </Link>
-          <Link to="/">
-            <button className="back-to-home-btn">Go Back</button>
-          </Link>
+          </div>
+          <div className="form-cabtype ">
+            <select
+              name="cabType"
+              // value={cabType}
+              // onChange={(e) => setCabType(e.target.value)}
+            >
+              <option value="">Select Cab Type</option>
+              <option value="Luxury">Luxury</option>
+              <option value="SUV">SUV</option>
+              <option value="Innova">Innova</option>
+              <option value="Sedan">Sedan</option>
+            </select>
+          </div>
+          <div>
+            <Link to='/find-a-driver'>
+            <input
+              type="submit"
+              className="btn"
+              // onClick={handleSubmit}
+              value="Request Driver"
+            />
+            </Link>
+          </div>
         </div>
-        <div className="booking-image">
-          <img src={BookingImage} alt="book img" />
-        </div>
-      </div>
+      </section>
     </>
   );
 }

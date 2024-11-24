@@ -50,7 +50,7 @@ function App() {
       <Router>
       <RefreshHandler setIsAuthenticated={setIsAuthenticated}/>
         <Routes>
-          <Route path="/" element={<PrivateRoute element={<Home />} />} />
+          <Route path="/" element={<Home>} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/our-team" element={<OurTeam />} />
           <Route path="/become-a-driver" element={<BecomeaDriver />} />
@@ -58,7 +58,7 @@ function App() {
           <Route path="/safety" element={<Safety />} />
           <Route path="/service-status" element={<ServiceStatus />} />
           <Route path="/leagal-privacy" element={<LeagalPrivacy />} />
-          <Route path="/book-a-driver" element={<BookADriver />} />
+          <Route path="/book-a-driver" element={<PrivateRoute element={<BookADriver />} />} />
           <Route path="/driver-confirm" element={<DriverConform />} />
           <Route path="/driver-on-way" element={<DriverOnWay />} />
           <Route path="/contact" element={<ContactUs />} />

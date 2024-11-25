@@ -38,8 +38,6 @@
 .driver-navbar-left .nav-brand {
     margin: 0;
     font-size: 25px;
-    letter-spacing: -2px;
-    text-shadow: 2.5px 2px #a4a3a3;
     font-weight: 600;
     color: var(--blue);
 

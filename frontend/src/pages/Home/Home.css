@@ -92,7 +92,6 @@ p {
   margin-left: 120px;
 }
 
-
 .heading {
   font-size: 90px;
   font-weight: 900;
@@ -150,55 +149,54 @@ p {
 
 @media screen and (max-width: 992px) {
   .main_section {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
   .me-auto {
     text-align: center;
   }
 
   .main_left {
-    width: 80%; 
+    width: 80%;
     text-align: center;
   }
 
   .main_btn,
   h1,
   p {
-    margin-left: 0; 
+    margin-left: 0;
   }
 
   .heading {
     font-size: 40px;
-    margin-top: 50px; 
+    margin-top: 50px;
   }
 
   .main_left p {
-    width: 90%; 
-    margin: 20px auto; 
+    width: 90%;
+    margin: 20px auto;
   }
 
   .main_btn {
-    width: 100%; 
-    margin: 20px 0; 
+    width: 100%;
+    margin: 20px 0;
     display: none;
   }
   .main_btn2 {
-    width: 100%; 
-    margin: 20px 0; 
+    width: 100%;
+    margin: 20px 0;
     display: block;
   }
-  
 
   .main_container {
-    width: 100%; 
-    border-radius: 20px; 
-    margin-bottom: 30px; 
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 30px;
   }
 
   .car_avtar {
-    width: 100%; 
-    margin-left: 0; 
+    width: 100%;
+    margin-left: 0;
     margin-top: 0;
   }
   .main_section p {
@@ -213,6 +211,14 @@ p {
 
 .feature_section {
   width: 100%;
+  background-image: linear-gradient(
+    to right top,
+    #131a88,
+    #296dffe8,
+    #0f5bff9c,
+    #0048ffc0,
+    #0033ffd5
+  );
 }
 
 .feature_content {
@@ -230,8 +236,8 @@ p {
 .feature_sub_heading {
   text-align: center;
   margin: 20px 0;
-  color: var(--blue);
   font-size: 2.4rem;
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 
@@ -256,7 +262,7 @@ p {
 }
 /* FAQ section */
 .Faq_heading {
-  color: var(--blue);
+  color: white;
   text-align: center;
   align-self: center;
   margin-top: 81px;
@@ -286,7 +292,6 @@ p {
 .main_section .heading {
   animation-name: slideInLeft;
   animation-duration: 1s;
-  
 }
 
 .main_section p {
@@ -372,7 +377,7 @@ p {
     #53cbef 100%
   );
   animation: slidernbw 5s linear infinite;
-  color: #000; 
+  color: #000;
   transform: scale(1.05);
 }
 @keyframes pulseAnimation {

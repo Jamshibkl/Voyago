@@ -30,7 +30,7 @@ function Feature() {
             skilled drivers, thoroughly vetted <br />
             for your peace of mind.
           </p>
-          <button className="btn">Learn More</button>
+          <button className="btn">Book Now</button>
         </div>
         <div className="feature-imgae">
           <img src={DrivingImage} alt="" />
@@ -51,7 +51,7 @@ function Feature() {
             feature lets you monitor your skillful driver's location, ensuring a
             smooth and stress-free travel experience.
           </p>
-          <button className="btn">Learn More</button>
+          <button className="btn">Book Now</button>
         </div>
       </div>
 
@@ -63,7 +63,7 @@ function Feature() {
             communicate preferences or provide special instructions, ensuring a
             smooth and personalized journey
           </p>
-          <button className="btn">Learn More</button>
+          <button className="btn">Book Now</button>
         </div>
         <div className="feature-imgae">
           <img
@@ -87,7 +87,7 @@ function Feature() {
             no hidden costs. Know your fare upfront and travel with confidence,
             knowing you're getting the best value
           </p>
-          <button className="btn">Learn More</button>
+          <button className="btn">Book Now</button>
         </div>
       </div>
     </>

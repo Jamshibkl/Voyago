@@ -5,6 +5,7 @@ import CarAnimate from "../../Assets/Car driving-rafiki (2).svg";
 import Feature from "../../components/Features/Feature";
 import HomeBanner from "../../components/banner/HomeBanner";
 import Review from "../../components/Review/Review";
+import OurService from "../../components/OurService/OurService";
 import FAQ from "../../components/FAQ/FAQ";
 import Footer from "../../components/Footer/Footer";
 import "./Home.css";
@@ -210,6 +211,12 @@ function Home() {
           </button>
           </NavLink>
         </div>
+      </section>
+
+      {/* service section */}
+      <section className="service-home-section">
+        <h1 className="service-home-h1" style={{textAlign:'center',color:"#407bff",fontSize:'34px',fontWeight:'bold',margin:'0'}}>Our Services</h1>
+        <OurService />
       </section>
       {/* feture section */}
       <section className="feature_section">

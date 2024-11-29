@@ -211,14 +211,14 @@ p {
 
 .feature_section {
   width: 100%;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right top,
     #131a88,
     #296dffe8,
     #0f5bff9c,
     #0048ffc0,
     #0033ffd5
-  );
+  ); */
 }
 
 .feature_content {

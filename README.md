@@ -20,7 +20,7 @@ Voyago is an innovative web application designed to provide skillful drivers on-
 - Intelligent driver matching algorithms 🚀
 - Secure user authentication 🔐
 - Intuitive user interface for clients and drivers 🖥️
-- Seamless driver requests and acceptance 📱
+- Seamless driver requests and acceptance 
 
 ## 🎯 Objectives
 

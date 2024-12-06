@@ -38,7 +38,7 @@ Voyago aims to achieve the following objectives:
 - Express.js 🌐
 - React.js ⚛️
 - Socket.io 🔌
-- JSON Web Tokens (JWT) 🔑
+- JSON Web Tokens (JWT) 
 - Google Maps API 🗺️
 
 ## ⚙️ Installation

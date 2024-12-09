@@ -49,7 +49,7 @@ Voyago aims to achieve the following objectives:
 4. Set up environment variables (if any).
 5. Run the application: `npm start`
 
-## 🌟 Usage
+##  Usage
 
 1. Visit the deployed application or run it locally.
 2. Sign up as a client or driver.

@@ -33,11 +33,11 @@ Voyago aims to achieve the following objectives:
 
 ## 🔧 Technologies
 
-- Node.js 🚀
-- MongoDB 📊
-- Express.js 🌐
-- React.js ⚛️
-- Socket.io 🔌
+- Node.js 
+- MongoDB 
+- Express.js 
+- React.js 
+- Socket.io 
 - JSON Web Tokens (JWT) 
 - Google Maps API 
 

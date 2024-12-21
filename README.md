@@ -1,4 +1,4 @@
-# 🚗 Voyago - Skillful Drivers On-Demand
+#  Voyago - Skillful Drivers On-Demand
 
 ## Overview
 

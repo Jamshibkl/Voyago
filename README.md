@@ -4,7 +4,7 @@
 
 Voyago is an innovative web application designed to provide skillful drivers on-demand, catering to clients who own cars but don't have the expertise to drive. Built using cutting-edge technologies and the dynamic MERN stack, Voyago connects clients with experienced drivers, offering a seamless and efficient platform for personalized transportation.
 
-## 📋Table of Contents
+## Table of Contents
 
 - [Features](#-features)
 - [Objectives](#-objectives)
@@ -14,7 +14,7 @@ Voyago is an innovative web application designed to provide skillful drivers on-
 - [Contributing](#-contributing)
 - [License](#-license)
 
-## 🚀 Features
+##  Features
 
 - Real-time tracking of rides
 - Intelligent driver matching algorithms 
@@ -22,7 +22,7 @@ Voyago is an innovative web application designed to provide skillful drivers on-
 - Intuitive user interface for clients and drivers 
 - Seamless driver requests and acceptance 
 
-## 🎯 Objectives
+##  Objectives
 
 Voyago aims to achieve the following objectives:
 
@@ -31,7 +31,7 @@ Voyago aims to achieve the following objectives:
 3. Prioritize secure user authentication for a safe and trustworthy environment.
 4. Offer a seamless and reliable transportation solution that adapts to modern demands.
 
-## 🔧 Technologies
+##  Technologies
 
 - Node.js 
 - MongoDB 
@@ -56,11 +56,11 @@ Voyago aims to achieve the following objectives:
 3. Experience the seamless skillful driver on-demand platform.
 4. Provide feedback and contribute to the project.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to open issues and submit pull requests to enhance Voyago.
 
-## 📄 License
+## License
 
 This project is licensed under the [Your License Name] - see the [LICENSE] file for details.
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)

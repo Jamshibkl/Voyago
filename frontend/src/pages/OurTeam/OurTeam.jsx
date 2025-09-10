@@ -1,7 +1,7 @@
 import React from "react";
 import "./OurTeam.css";
-import Founder1 from "../../Assets/kaushik.jpg";
-import Founder2 from "../../Assets/jamsheer-profile.jpeg";
+// import Founder1 from "../../Assets/kaushik.jpg";
+// import Founder2 from "../../Assets/jamsheer-profile.jpeg";
 import Amigo from "../../Assets/Team goals-cuate.svg";
 import Revenue from "../../Assets/Team spirit-cuate.svg";
 import Footer from "../../components/Footer/Footer";
@@ -22,7 +22,7 @@ function OurTeam() {
             <h3>Meet Our Founders</h3>
             <div className="founder">
               <div className="co-Founder">
-                <img src={Founder1} alt="" />
+{/*                 <img src={Founder1} alt="" /> */}
                 <h4>
                   Kaushik N <br /> <span>Co-Founder and Visionary
                   </span> </h4>
@@ -35,9 +35,9 @@ function OurTeam() {
               </div>
 
               <div className="co-Founder">
-                <img src={Founder2} alt="" />
+{/*                 <img src={Founder2} alt="" /> */}
                 <h4>
-                  Mohammed Jamsheer <br /> <span>Co-Founder and Technology Maestro</span>
+                   Jamsheer Rahman<br /> <span>Co-Founder and Technology Maestro</span>
                 </h4>
                 <p>
                  Jamsheer, the tech genius behind Voyago, leads the development

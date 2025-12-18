@@ -1,4 +1,5 @@
 import React from "react";
+import "./OurTeam.css";
 import Founder1 from "../../Assets/kaushik.jpg";
 import Founder2 from "../../Assets/jamsheer-profile.jpeg";
 import Amigo from "../../Assets/Team goals-cuate.svg";
@@ -50,82 +51,43 @@ function OurTeam() {
   ];
 
   return (
-    <div className="font-poppins text-slate-900 bg-white overflow-x-hidden selection:bg-blue-100">
-      <style>{customStyles}</style>
-      <NavBar />
-
-      <div className="pt-24">
-        {/* ================= HERO SECTION ================= */}
-        <section className="relative w-full py-20 lg:py-32 overflow-hidden bg-[#fdfdff]">
-          <div className="absolute inset-0 bg-grid-pattern opacity-[0.6] pointer-events-none"></div>
-          <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-blue-100/60 rounded-full mix-blend-multiply filter blur-[80px] animate-blob"></div>
-          <div className="absolute bottom-[10%] left-[-10%] w-[500px] h-[500px] bg-purple-100/60 rounded-full mix-blend-multiply filter blur-[80px] animate-blob animation-delay-2000"></div>
-
-          <div className="container max-w-7xl mx-auto px-6 relative z-10 text-center">
-            <span className="inline-block py-1 px-3 rounded-full bg-blue-50 text-[#2c7bfe] text-xs font-bold uppercase tracking-wider mb-6 border border-blue-100">
-              The People Behind Voyago
-            </span>
-            <h1 className="animate-fade-in-up text-5xl md:text-7xl font-extrabold text-[#1f194c] mb-8 leading-tight">
-              Meet the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2c7bfe] to-purple-600">Dream Team.</span>
-            </h1>
-            <p className="animate-fade-in-up delay-100 text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-medium">
-              We are a collective of visionaries, engineers, and dreamers dedicated to 
-              shaping the future of transportation with expertise and shared passion.
-            </p>
-          </div>
-        </section>
-
-        {/* ================= FOUNDERS SECTION ================= */}
-        <section className="py-24 bg-white relative">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1f194c]">Our Leadership</h2>
-              <div className="w-20 h-1.5 bg-[#2c7bfe] mx-auto mt-4 rounded-full"></div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-12 lg:gap-20 max-w-5xl mx-auto">
-              {/* Founder 1 */}
-              <div className="group animate-fade-in-up delay-100">
-                <div className="bg-[#f8faff] rounded-[2.5rem] p-8 lg:p-12 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl border border-slate-100 relative overflow-hidden h-full">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100/50 rounded-bl-[100px] -z-0"></div>
-                  <img src={Founder1} alt="Kaushik N" className="w-32 h-32 rounded-2xl object-cover mb-8 shadow-lg grayscale group-hover:grayscale-0 transition-all duration-500 border-4 border-white relative z-10" />
-                  <div className="relative z-10">
-                    <h3 className="text-2xl font-bold text-[#1f194c]">Kaushik N</h3>
-                    <p className="text-[#2c7bfe] font-bold text-sm uppercase tracking-widest mb-6">Co-Founder & Visionary</p>
-                    <p className="text-slate-500 leading-relaxed mb-8">
-                      A visionary leader with a background in transportation, Kaushik
-                      spearheads strategic direction and innovation. Her commitment to 
-                      excellence drives our mission forward.
-                    </p>
-                    <div className="flex gap-4">
-                      <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-400 hover:text-blue-600 shadow-sm transition-colors border border-slate-100">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                      </a>
-                    </div>
-                  </div>
-                </div>
+    <>
+    <NavBar />
+      <div className="conatiner">
+        <div className="ourTeam">
+          <h1>Our Team</h1>
+          <p className="teamPara">
+            Get to know the passionate individuals who drive Voyago forward,
+            shaping the <br /> future of transportation with their expertise,
+            dedication, and shared vision.
+          </p>
+          <div className="Founders">
+            <h3>Meet Our Founders</h3>
+            <div className="founder">
+              <div className="co-Founder">
+                <img src={Founder1} alt="" />
+                <h4>
+                  Kaushik N <br /> <span>Co-Founder and Visionary
+                  </span> </h4>
+                <p>
+                  A visionary leader with a background in transportation, Kaushik
+                  spearheads Voyago's strategic direction and innovation
+                  initiatives. Her unwavering commitment to excellence drives
+                  the company's mission forward.
+                </p>
               </div>
 
-              {/* Founder 2 */}
-              <div className="group animate-fade-in-up delay-200">
-                <div className="bg-[#f8faff] rounded-[2.5rem] p-8 lg:p-12 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl border border-slate-100 relative overflow-hidden h-full">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-purple-100/50 rounded-bl-[100px] -z-0"></div>
-                  <img src={Founder2} alt="Mohammed Jamsheer" className="w-32 h-32 rounded-2xl object-cover mb-8 shadow-lg grayscale group-hover:grayscale-0 transition-all duration-500 border-4 border-white relative z-10" />
-                  <div className="relative z-10">
-                    <h3 className="text-2xl font-bold text-[#1f194c]">Mohammed Jamsheer</h3>
-                    <p className="text-[#2c7bfe] font-bold text-sm uppercase tracking-widest mb-6">Co-Founder & Tech Maestro</p>
-                    <p className="text-slate-500 leading-relaxed mb-8">
-                      The tech genius behind Voyago, leading the development of cutting-edge 
-                      solutions. He ensures we stay at the forefront of technological 
-                      advancements.
-                    </p>
-                    <div className="flex gap-4">
-                      <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-400 hover:text-blue-600 shadow-sm transition-colors border border-slate-100">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                      </a>
-                    </div>
-                  </div>
-                </div>
+              <div className="co-Founder">
+                <img src={Founder2} alt="" />
+                <h4>
+                  Mohammed Jamsheer <br /> <span>Co-Founder and Technology Maestro</span>
+                </h4>
+                <p>
+                 Jamsheer, the tech genius behind Voyago, leads the development
+                  of cutting-edge solutions. With a passion for innovation, he
+                  ensures Voyago stays at the forefront of technological
+                  advancements in the transportation industry.
+                </p>
               </div>
             </div>
           </div>
